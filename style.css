@@ -1,40 +1,96 @@
 /* Blog TI. */
-.logoBlog {
+
 position: relative;
-width: 144px;
-height: 212px;
+width: 1440px;
+height: 2313px;
 
 background: #F1F2E8;
-}
 
 
 /* imagem_de_fundo 1 */
-.telahome {
+
 position: absolute;
 width: 1440px;
 height: 639px;
 left: 0px;
 top: 211px;
 
-}
+background: url(imagem_de_fundo.png);
+
+
+/* Esboço da tela principal - HOME */
+
+position: absolute;
+width: 496px;
+height: 149px;
+left: -31px;
+top: -204px;
+
+font-family: 'Iceland';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 58px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Facebook Instagram Linkedin */
+
+position: absolute;
+width: 470px;
+height: 209px;
+left: 89px;
+top: 2077px;
+
+font-family: 'Iceland';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 58px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Copyright © 2023 Blog Código & Café. Todos os direitos reservados. */
+
+position: absolute;
+width: 650px;
+height: 186px;
+left: 690px;
+top: 2077px;
+
+font-family: 'Iceland';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 58px;
+text-align: center;
+
+color: #000000;
+
 
 
 /* Rectangle 1 */
-.retangulo {
+
 position: absolute;
 width: 159px;
 height: 183px;
-left: 65px;
-top: 74px;
+left: 66px;
+top: 68px;
 
 background: linear-gradient(180deg, #45444E 0%, rgba(255, 255, 255, 0) 100%);
-}
+
 
 /* imagem2 1 */
 
 position: absolute;
 width: 1440px;
-height: 1250px;
+height: 1189px;
 left: 0px;
 top: 850px;
 
@@ -42,7 +98,7 @@ background: url(imagem2.png);
 
 
 /* TI */
-.logoTI {
+
 position: absolute;
 left: 6.6%;
 right: 84.24%;
@@ -56,7 +112,6 @@ font-size: 128px;
 line-height: 129px;
 
 color: #000000;
-}
 
 
 
@@ -65,8 +120,8 @@ color: #000000;
 position: absolute;
 width: 92px;
 height: 54px;
-left: 77px;
-top: 78px;
+left: calc(50% - 92px/2 - 594px);
+top: calc(50% - 54px/2 - 1045.5px);
 
 
 
@@ -88,108 +143,13 @@ color: #000000;
 
 
 
-/* Cursos Pagos */
-
-position: absolute;
-width: 125px;
-height: 54px;
-left: 766px;
-top: 105px;
-
-font-family: 'Iceland';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 29px;
-text-align: center;
-
-color: #000000;
-
-
-
-/* Dicas e Tutoriais */
-
-position: absolute;
-width: 152px;
-height: 54px;
-left: 550px;
-top: 108px;
-
-font-family: 'Iceland';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 29px;
-text-align: center;
-
-color: #000000;
-
-
-
-/* Notícias da Semana */
-.news {
-position: absolute;
-width: 163px;
-height: 54px;
-left: 316px;
-top: 108px;
-
-font-family: 'Iceland';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 29px;
-text-align: center;
-
-color: #000000;
-}
-
-
-/* História da Programação */
-
-position: absolute;
-width: 162px;
-height: 58px;
-left: 967px;
-top: 105px;
-
-font-family: 'Iceland';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 29px;
-text-align: center;
-
-color: #000000;
-
-
-
-/* Sobre quem somos */
-
-position: absolute;
-width: 148px;
-height: 87px;
-left: 1218px;
-top: 105px;
-
-font-family: 'Iceland';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 29px;
-text-align: center;
-
-color: #000000;
-
-
-
 /* Tem interesse em aprender a programar? */
 
 position: absolute;
 width: 274px;
 height: 76px;
-left: 440px;
-top: 994px;
+left: 446px;
+top: 956px;
 
 font-family: 'Iceland';
 font-style: normal;
@@ -226,8 +186,8 @@ color: #000000;
 position: absolute;
 width: 279px;
 height: 118px;
-left: 226px;
-top: 1107px;
+left: 306px;
+top: 1087px;
 
 font-family: 'Iceland';
 font-style: normal;
@@ -240,19 +200,125 @@ color: #000000;
 
 
 
-/* Saiba mais */
+/* Notícias da Semana */
 
 position: absolute;
-width: 250px;
-height: 58px;
-left: 293px;
-top: 1955px;
+width: 153px;
+height: 82px;
+left: 318px;
+top: 82px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Dicas e Tutoriais */
+
+position: absolute;
+width: 153px;
+height: 82px;
+left: 533px;
+top: 82px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* História da programação */
+
+position: absolute;
+width: 205px;
+height: 82px;
+left: 939px;
+top: 82px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Cursos Livres */
+
+position: absolute;
+width: 153px;
+height: 82px;
+left: 736px;
+top: 82px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Sobre Quem Somos */
+
+position: absolute;
+width: 175px;
+height: 82px;
+left: 1218px;
+top: 82px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 603px;
+height: 506px;
+left: 105px;
+top: 1381px;
+
+background: rgba(248, 252, 85, 0.3);
+
+
+/* Continue por aqui e descubra muito mais!! */
+
+position: absolute;
+width: 337px;
+height: 205px;
+left: 245px;
+top: 1429px;
 
 font-family: 'Iceland';
 font-style: normal;
 font-weight: 400;
-font-size: 60px;
-line-height: 58px;
+font-size: 40px;
+line-height: 39px;
 text-align: center;
 
 color: #000000;
