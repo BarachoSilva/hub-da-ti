@@ -8,7 +8,7 @@ background: #F1F2E8;
 
 
 /* imagem_de_fundo 1 */
-
+.telahome{
 position: absolute;
 width: 1440px;
 height: 639px;
@@ -16,6 +16,7 @@ left: 0px;
 top: 211px;
 
 background: url(imagem_de_fundo.png);
+}
 
 
 /* Esboço da tela principal - HOME */
@@ -201,7 +202,7 @@ color: #000000;
 
 
 /* Notícias da Semana */
-
+.news{
 position: absolute;
 width: 153px;
 height: 82px;
@@ -216,6 +217,7 @@ line-height: 36px;
 text-align: center;
 
 color: #000000;
+}
 
 
 
