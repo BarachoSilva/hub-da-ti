@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    justify-content: center;    
+}
+
+footer a {
+    margin: 40px
+}
+
+footer a:hover {
+    color: blue;
+}
+
+footer p {
+   margin-top: 20px; 
+   text-align: center;
+}
+body {
+    padding: 0px 50px;
+}
+
+body p {
+    font-size: medium;
+}
+main{
+    text-align: left;
+    margin-bottom: 40px;
+
+main a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    list-style-type: none;
+}
+    
+}
+main a:hover {
+    color: blue
+    
+}
+    
