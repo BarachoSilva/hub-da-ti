@@ -1,0 +1,58 @@
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    padding: 36px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;    
+}
+
+footer a {
+    margin: 40px;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+footer p {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+body {
+    padding: 0px 50px;
+}
+
+body p {
+    font-size: medium;
+}
