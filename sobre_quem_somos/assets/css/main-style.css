@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.section {
+  width: 60vw;
+  height: 40vh;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+
+.profile {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 14vw;
+  height: 32vh;
+  padding: 3.7px;
+  border: #778da9 solid 3px;
+}
+
+.div{
+    width: 70%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.redes {
+  width: 25px;
+  height: 25px;
+}
