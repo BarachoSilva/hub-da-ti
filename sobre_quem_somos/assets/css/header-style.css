@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #edede9;
+  background-color: #2b2d42;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f4f3ee;
 }
 
 .header {
@@ -14,6 +15,11 @@
   justify-content: space-evenly;
   text-transform: uppercase;
   
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 40px;
 }
 .nav {
   width: 80%;
@@ -29,5 +35,5 @@
 
 a {
   text-decoration: none;
-  color: #000814;
+  color: #f4f3ee;
 }

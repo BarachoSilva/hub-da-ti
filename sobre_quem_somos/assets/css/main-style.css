@@ -10,7 +10,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
- 
 }
 
 .profile {
@@ -23,12 +22,12 @@ h1 {
   border: #778da9 solid 3px;
 }
 
-.div{
-    width: 70%;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.div {
+  width: 70%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .name {
@@ -38,4 +37,71 @@ h1 {
 .redes {
   width: 25px;
   height: 25px;
+}
+
+.form {
+  width: 90vw;
+  height: 95%;
+  margin: 0 auto;
+}
+
+form h2 {
+  text-align: center;
+  margin-top: 15vh;
+  font-size: 2rem;
+}
+form h4 {
+  text-align: center;
+  margin-top: 3vh;
+  font-size: 1.2rem;
+}
+
+.sectionForm {
+  display: flex;
+  justify-content: space-around;
+}
+form p {
+  font-size: 1.2em;
+  margin-top: 1.2vh;
+}
+.data {
+  width: 40%;
+  height: 50vh;
+}
+.data input {
+  width: 40vw;
+  padding: 1rem 0.75rem;
+  border-radius: 10px;
+}
+textarea {
+  width: 40vw;
+  padding: 1rem 0.75rem;
+  border-radius: 10px;
+}
+.tech {
+  width: 40%;
+  height: 50vh;
+}
+.tech p {
+  margin-top: 2.5vh;
+}
+select {
+  width: 40vw;
+  padding: 1rem 0.75rem;
+  border-radius: 10px;
+}
+button {
+  width: 40vw;
+  margin-top: 30px;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border: none;
+  color: #222222;
+  background-color: #8d99ae;
+  cursor: pointer;
+  border-radius: 50px;
+}
+button:hover {
+  background-color: #2a6f97;
+  transition: 0.3s;
 }
