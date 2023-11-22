@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/cursos/style.css">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Cursos</title>
 </head>
-<body style="background-color: #edede9">
-    <header>
-        <nav>
-            <ul>
-               <a href="/index.html"> <img sheight="200px" width="200px" style="border-radius: 50%"  src="/cursos/img/logo.png" alt="logo HUB DA TI"> </a>
-              <li><a href="/noticias_da_semana/noticias_da_semana.html">Notícias da Semana</a></li>      
-              <li><a href="/dicas_e_tutoriais/dicas_e_tutoriais.html">Dicas e Tutoriais</a></li>    
-              <li><a href="/cursos/cursos.html">Cursos</a></li></button>
-              <li><a href="/historia_da_programacao/historia_da_programacao.html">História da Programação</a></li>
-              <li><a href="/sobre_quem_somos/desenvolvedores.html">Sobre Quem Somos</a></li>        
+<body>
+    <header class="header">
+       <a href="/index.html"><img class="logo" src="/sobre_quem_somos/assets/images/hub.png" alt="Logotipo do Blog"></a>
+        <nav class="nav">
+            <ul class="ul">
+              <li class="li">
+                <a href="/noticias_da_semana/noticias_da_semana.html">Notícias da Semana</a></li>      
+              <li>
+                <a href="/dicas_e_tutoriais/dicas_e_tutoriais.html">Dicas e Tutoriais</a></li>    
+              <li>
+                <a href="/cursos/cursos.html">Cursos</a></li>
+              <li>
+                <a href="/historia_da_programacao/historia_da_programacao.html">História da Programação</a></li>
+              <li>
+                <a href="/sobre_quem_somos/desenvolvedores.html">Sobre Quem Somos</a></li>        
             </ul>
           </nav>
-        <img src="/cursos/img/telahome.jpeg" alt="Imagem retratando as tantas opções de códigos de programação"/>
     </header>
     <main>
-        <h1>Cursos gratuitos</h1>
+        <h1>CURSOS</h1>
+            <section>
             <ul>
+                <div class="curso1">
                 <li>
                     <h2>Algoritmos</h2>
-                    <img height="200px" width="200px" 
-                    src="/cursos/img/algoritmos-300x300.jpg" alt="imgens referencia ao curso">
+                    <img class="logocursos"
+                    src="/cursos/img/algoritmos-300x300.jpg" height="200px" width="200px" alt="imgens referencia ao curso">
                     <p>
                         Hoje em dia, algoritmos computacionais estão presentes em quase tudo na nossa vida. Além dos tradicionais computadores e notebooks, muitos estão totalmente acostumados com o uso de aplicativos para smartphones e tablets, TVs inteligentes podem executar programas personalizados e até mesmo outros aparelhos que usamos no nosso dia-a-dia.
     
@@ -38,21 +45,24 @@
                     <a href="https://www.cursoemvideo.com/curso/curso-de-algoritmo/" target="_blank">
                         LINK PARA O CURSO</a>
                 </li>
+                 </div>
+                 <div class="curso2">
                 <li>
                     <h2>Git e Github</h2>
-                    <img height="200px" width="200px" 
+                    <img class="logocursos" height="200px" width="200px" 
                     src="/cursos/img/git-1-300x300.png" alt="imgens referencia ao curso">
                     <p>
                         Você sabe o que é Git? Sabe a diferença entre Git e GitHub? Já tentou aprender versionamento, mas achou complicado ter que aprender dezenas de comandos e parâmetros? Pois veja esse curso GRÁTIS e prático, onde não usaremos NENHUM COMANDO! Você vai ser capaz de utilizar softwares de versionamento sem digitar nenhum comando no terminal.
                     </p>
-                    <a href="https://www.cursoemvideo.com/curso/curso-de-git-e-github/"
+                    <a class="video-1" href="https://www.cursoemvideo.com/curso/curso-de-git-e-github/"
                     target="_blank">
                         LINK PARA O CURSO</a>
                 </li>
-                
+                </div>
+                <div class="curso3">
                 <li>
                     <h2>HTML e CSS</h2>
-                    <img height="200px" width="200px" 
+                    <img class="logocursos" height="200px" width="200px" 
                     src="/cursos/img/html5-300x300.jpg" alt="imgens referencia ao curso">
                     <p>
                         HTML5 (Hypertext Markup Language, versão 5) é uma linguagem de estruturação e apresentação de conteúdo para a World Wide Web. O conhecimento desta linguagem, juntamente com as tecnologias CSS3 e JavaScript é essencial para todos os profissionais de web.
@@ -62,9 +72,11 @@ Curso completo para quem quer aprender a criar sites utilizando as tecnologias d
                     target="_blank">
                         LINK PARA O CURSO</a>
                 </li>
+                </div>
+                <div class="curso4">
                 <li>
                     <h2>JavaScript</h2>
-                    <img height="200px" width="200px" 
+                    <img class="logocursos" height="200px" width="200px" 
                     src="/cursos/img/javascript-300x300.jpg" alt="imgens referencia ao curso">
                     <p>
                         Curso de linguagem JavaScript, voltado para iniciantes e para quem quiser aprender mais sobre ECMAScript, a versão padronizada do JS. Em um curso patrocinado pelo Google, o professor Gustavo Guanabara vai ensinar o conteúdo básico em 6 módulos que vão desde o conhecimento da linguagem até o uso de funções.
@@ -73,32 +85,18 @@ Curso completo para quem quer aprender a criar sites utilizando as tecnologias d
                     target="_blank">
                         LINK PARA O CURSO</a>
                 </li>
+                </div>
             </ul>
+        </section>
     </main>
     <footer>
-        <a>
-          <img height="40px" width="40px" 
-          src="/img/github.png" alt="Ícone do GitHub">
-          <p>GitHub</p>
-        </a> 
-        <a>
-          <img height="40px" width="70px" 
-          src="/img/instagram.png" alt="Ícone do Instagram">
-          <p>Instagram</p>
-        </a> 
-        <a>
-          <img height="40px" width="40px" 
-          src="/img/facebook.jpg" alt="Ícone do Facebook">
-          <p>Facebook</p>
-        </a> 
-        <a>
-          <img sheight="70px" width="70px" 
-          src="/img/twitter.png" alt="Ícone do Twitter">
-          <p>Twitter</p>
-        </a> 
-    </footer>
-    <p>Copyright © 2023 Blog Hub da TI. 
-      Todos os direitos reservados.</p>
+        <p>Todos os direitos reservados <span>&#169;</span> 2023 Blog da TI</p>
+        <p>Veja o repósitório da página:</p>
+        <a href="https://github.com/BarachoSilva/codigo-e-cafe" target="_blank">Repositório</a>
+        <p>Clique abaixo e conheça a Proz Educação</p>
+        <a href="https://prozeducacao.com.br/" target="_blank">Proz Educação</a>
+      </footer>
+    
 </body>
 </html>
 
