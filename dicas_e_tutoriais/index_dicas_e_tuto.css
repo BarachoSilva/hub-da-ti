@@ -6,12 +6,12 @@
 
 body {
   font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-  background-color: #f8f8f8; /* Fundo mais claro */
-  color: #333; /* Cor do texto mais escura */
+  background-color: #f8f8f8; 
+  color: #333; 
 }
 
 .header {
-  background-color: #4d4dff; /* Azul mais vibrante */
+  background-color: #4d4dff; 
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -21,13 +21,13 @@ body {
 .logo {
   width: 150px;
   height: 150px;
-  margin-top: 20px; /* Reduzi o espaçamento superior */
+  margin-top: 20px; 
 }
 
 .nav {
   width: 80%;
   display: flex;
-  justify-content: center; /* Centralizado o menu */
+  justify-content: center; 
 }
 
 .ul {
@@ -40,13 +40,13 @@ body {
 
 a {
  text-decoration: none;
-  color: #fff; /* Cor do texto mais clara para destaque */
-  font-weight: bold; /* Texto em negrito */
+  color: #fff; 
+  font-weight: bold; 
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffcc00; /* Cor do texto mais clara no hover */
+  color: #ffcc00; 
 }
 
 main {
@@ -54,7 +54,7 @@ main {
 }
 
 h1 {
-  color: #4d4dff; /* Azul mais vibrante */
+  color: #4d4dff; 
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
@@ -72,14 +72,14 @@ h2 {
 }
 
 footer {
-  background-color: #4d4dff; /* Azul mais vibrante no rodapé */
-  color: #fff; /* Texto branco */
+  background-color: #4d4dff; 
+  color: #fff; 
   padding: 20px;
   text-align: center;
 }
 
 footer a {
-  color: #fff; /* Texto branco para links no rodapé */
+  color: #fff; 
   text-decoration: underline;
   margin: 0 5px;
 }
@@ -94,14 +94,14 @@ h3, h4, p {
   text-align: center;
 }
 
-/* Estilo para os links dos vídeos */
+
 section a {
   text-decoration: none;
-  color: #333; /* Cor do texto mais escura */
+  color: #333; 
   display: block;
 }
 
-/* Estilo para os links dos vídeos no hover */
+
 section a:hover {
-  color: #4d4dff; /* Cor do texto mais vibrante no hover */
+  color: #4d4dff; 
 }

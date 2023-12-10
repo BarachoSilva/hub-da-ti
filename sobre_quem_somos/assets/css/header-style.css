@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +6,13 @@
 
 body {
   font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-  background-color: #f8f8f8; /* Fundo mais claro */
-  color: #333; /* Cor do texto mais escura */
+  background-color: #f8f8f8; 
+  color: #333; 
 }
 
-/* Header Style */
+
 .header {
-  background-color: #4d4dff; /* Azul mais vibrante */
+  background-color: #4d4dff; 
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -41,22 +40,22 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff; /* Cor do texto mais clara para destaque */
-  font-weight: bold; /* Texto em negrito */
+  color: #fff; 
+  font-weight: bold; 
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffcc00; /* Cor do texto mais clara no hover */
+  color: #ffcc00; 
 }
 
-/* Main Style */
+
 main {
   padding: 20px;
 }
 
 h1 {
-  color: #4d4dff; /* Azul mais vibrante */
+  color: #4d4dff; 
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
@@ -82,7 +81,7 @@ h1 {
 
 .name {
   font-size: 24px;
-  color: #4d4dff; /* Azul mais vibrante */
+  color: #4d4dff; 
 }
 
 p {
@@ -95,9 +94,9 @@ p {
   margin-right: 10px;
 }
 
-/* Form Style */
+
 .form {
-  background-color: #fff; /* Fundo branco */
+  background-color: #fff; 
   padding: 20px;
   margin-top: 20px;
 }
@@ -120,22 +119,22 @@ textarea {
 }
 
 button {
-  background-color: #4d4dff; /* Azul mais vibrante */
-  color: #fff; /* Texto branco */
+  background-color: #4d4dff; 
+  color: #fff; 
   padding: 10px;
   border: none;
   cursor: pointer;
 }
 
 footer {
-  background-color: #4d4dff; /* Azul mais vibrante no rodapé */
-  color: #fff; /* Texto branco */
+  background-color: #4d4dff; 
+  color: #fff; 
   padding: 20px;
   text-align: center;
 }
 
 footer a {
-  color: #fff; /* Texto branco para links no rodapé */
+  color: #fff; 
   text-decoration: underline;
   margin: 0 5px;
 }
