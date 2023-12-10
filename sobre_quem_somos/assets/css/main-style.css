@@ -1,15 +1,21 @@
+main {
+  background-color: #4d4f6d;
+}
+
 h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
+  padding: 10px;
 }
 .section {
-  width: 60vw;
+  width: 95vw;
   height: 40vh;
   margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-radius: 10px;
 }
 
 .profile {
@@ -40,29 +46,37 @@ h1 {
 }
 
 .form {
-  width: 90vw;
-  height: 95%;
+  width: 95vw;
+  height: 60vh;
   margin: 0 auto;
+ 
 }
 
 form h2 {
   text-align: center;
-  margin-top: 15vh;
+  padding: 8px;
   font-size: 2rem;
 }
 form h4 {
   text-align: center;
-  margin-top: 3vh;
+  padding: 6px;
   font-size: 1.2rem;
 }
 
 .sectionForm {
   display: flex;
   justify-content: space-around;
+ 
 }
-form p {
+form label {
   font-size: 1.2em;
-  margin-top: 1.2vh;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 1em;
+  padding: 8px;
 }
 .data {
   width: 40%;
@@ -70,9 +84,11 @@ form p {
 }
 .data input {
   width: 40vw;
-  padding: 1rem 0.75rem;
+  padding: 12px;
+  margin-top: 4px;
   border-radius: 10px;
 }
+
 textarea {
   width: 40vw;
   padding: 1rem 0.75rem;
@@ -82,22 +98,22 @@ textarea {
   width: 40%;
   height: 50vh;
 }
-.tech p {
-  margin-top: 2.5vh;
+.tech label {
+  padding: 8px;
 }
 select {
   width: 40vw;
-  padding: 1rem 0.75rem;
+  padding: 4px;
   border-radius: 10px;
 }
 button {
   width: 40vw;
-  margin-top: 30px;
+  margin-top: 15px;
   padding: 1rem 3rem;
   font-size: 1.2rem;
   border: none;
   color: #222222;
-  background-color: #8d99ae;
+  background-color: #4d4f6d;
   cursor: pointer;
   border-radius: 50px;
 }
