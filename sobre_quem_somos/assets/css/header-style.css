@@ -1,39 +1,145 @@
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #2b2d42;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f4f3ee;
 }
 
-.header {
-  width: 100%;
-  height: 12vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-transform: uppercase;
-  
+body {
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  background-color: #f8f8f8; /* Fundo mais claro */
+  color: #333; /* Cor do texto mais escura */
 }
+
+/* Header Style */
+.header {
+  background-color: #4d4dff; /* Azul mais vibrante */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   width: 150px;
   height: 150px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
+
 .nav {
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
+
 .ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
-  color: #f4f3ee;
+  color: #fff; /* Cor do texto mais clara para destaque */
+  font-weight: bold; /* Texto em negrito */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffcc00; /* Cor do texto mais clara no hover */
+}
+
+/* Main Style */
+main {
+  padding: 20px;
+}
+
+h1 {
+  color: #4d4dff; /* Azul mais vibrante */
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 12px;
+}
+
+.section {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+.div {
+  width: 60%;
+}
+
+.name {
+  font-size: 24px;
+  color: #4d4dff; /* Azul mais vibrante */
+}
+
+p {
+  text-align: justify;
+}
+
+.redes {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Form Style */
+.form {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h2, h4 {
+  text-align: center;
+}
+
+.sectionForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data, .tech {
+  width: 48%;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background-color: #4d4dff; /* Azul mais vibrante */
+  color: #fff; /* Texto branco */
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #4d4dff; /* Azul mais vibrante no rodapé */
+  color: #fff; /* Texto branco */
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff; /* Texto branco para links no rodapé */
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+footer p {
+  text-align: center;
 }

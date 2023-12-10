@@ -6,12 +6,12 @@
 
 body {
   font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-  background-color: #2b2d42;
-  color: #f4f3ee;
+  background-color: #f8f8f8; /* Fundo mais claro */
+  color: #333; /* Cor do texto mais escura */
 }
 
 .header {
-  background-color: #1d1e2d;
+  background-color: #4d4dff; /* Azul mais vibrante */
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -21,32 +21,41 @@ body {
 .logo {
   width: 150px;
   height: 150px;
-  margin-top: 40px;
+  margin-top: 20px; /* Reduzi o espaçamento superior */
 }
 
 .nav {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
+  width: 80%;
+  display: flex;
+  justify-content: center; /* Centralizado o menu */
 }
+
 .ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
 }
+
 a {
-    margin-right: 100px;
-    text-decoration: none;
-    color: #f4f3ee;
-    font-size: larger;
+  text-decoration: none;
+  color: #fff; /* Cor do texto mais clara para destaque */
+  font-weight: bold; /* Texto em negrito */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffcc00; /* Cor do texto mais clara no hover */
+}
+
+main {
+  padding: 20px;
 }
 
 .linkCurso {
   display: inline-block;
-  background-color: #4d4f6d;
-  color: #f4f3ee;
+  background-color: #ff66b2; /* Rosa mais vibrante */
+  color: #fff; /* Texto branco */
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 5px;
@@ -55,24 +64,18 @@ a {
 }
 
 .linkCurso:hover {
-  background-color: #6b6e91;
+  background-color: #ff3385; /* Rosa mais escuro no hover */
 }
 
-nav a:hover {
-    color: blue;
-}
-
-main {
-  padding: 20px;
-}
 
 h1 {
-  color: #f4f3ee; 
+  color: #4d4dff; /* Azul mais vibrante */
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
-  padding: 12px
+  padding: 12px;
 }
+
 section {
   margin-bottom: 40px;
 }
@@ -82,22 +85,24 @@ h2 {
   padding: 12px;
   margin-bottom: 40px;
 }
+
 .curso1,
 .curso2,
 .curso3,
 .curso4 {
-  background-color: #1d1e2d;
+  background-color: #fff; /* Fundo branco para destacar */
   padding: 20px;
   border-radius: 10px;
-  overflow: hidden; 
+  overflow: hidden;
   list-style-type: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
 }
 
 .logocursos {
-  max-width: 200px; 
+  max-width: 200px;
   height: auto;
-  float: left; 
-  margin-right: 20px; 
+  float: left;
+  margin-right: 20px;
 }
 
 .curso1 p,
@@ -107,17 +112,15 @@ h2 {
   overflow: hidden; /* Limpa a flutuação e mantém o layout correto */
 }
 
+footer {
+  background-color: #4d4dff; /* Azul mais vibrante no rodapé */
+  color: #fff; /* Texto branco */
+  padding: 20px;
+  text-align: center;
+}
 
-.footer {
-    background-color: #1d1e2d;
-    color: #f4f3ee;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer a {
-    color: #f4f3ee;
-    text-decoration: underline;
-    margin: 0 5px;
-  }
-  
+footer a {
+  color: #fff; /* Texto branco para links no rodapé */
+  text-decoration: underline;
+  margin: 0 5px;
+}
