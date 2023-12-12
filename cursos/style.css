@@ -8,6 +8,7 @@ body {
   font-family: 'Verdana', Geneva, Tahoma, sans-serif;
   background-color: #2b2d42;
   color: #f4f3ee;
+  font-size: 16px;
 }
 
 .header {
@@ -16,31 +17,41 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
-  margin-top: 40px;
+  width: 100%;
+  max-width: 150px;
 }
 
 .nav {
     width: 80%;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
 }
 .ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    
+    margin-top: 10px;
+}
+
+ul li{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 a {
-    margin-right: 100px;
     text-decoration: none;
     color: #f4f3ee;
-    font-size: larger;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; 
 }
 
 .linkCurso {
@@ -62,8 +73,8 @@ nav a:hover {
     color: blue;
 }
 
-main {
-  padding: 20px;
+.main {
+  padding: 10px;
 }
 
 h1 {
@@ -87,31 +98,32 @@ h2 {
 .curso3,
 .curso4 {
   background-color: #1d1e2d;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   overflow: hidden; 
   list-style-type: none;
 }
 
 .logocursos {
-  max-width: 200px; 
+  width: 100%;
+  max-width: 150px; 
   height: auto;
   float: left; 
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .curso1 p,
 .curso2 p,
 .curso3 p,
 .curso4 p {
-  overflow: hidden; /* Limpa a flutuação e mantém o layout correto */
+  overflow: hidden;
 }
 
 
 .footer {
     background-color: #1d1e2d;
     color: #f4f3ee;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
   }
   
@@ -121,3 +133,34 @@ h2 {
     margin: 0 5px;
   }
   
+  /* Adicione este trecho ao final do seu arquivo CSS */
+
+@media screen and (max-width: 540px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ul {
+    display: block; /* Esconde a lista de itens do menu */
+  }
+
+  .ul.active {
+    display: flex; /* Mostra a lista de itens do menu quando o menu hamburguer está ativo */
+    flex-direction: column;
+  }
+
+  .ul li {
+    margin-bottom: 10px;
+  }
+
+  .nav-toggle {
+    display: block; /* Mostra o ícone do menu hamburguer */
+    cursor: pointer;
+  }
+
+  .nav-toggle img {
+    width: 30px; /* Define o tamanho do ícone do menu hamburguer */
+    height: auto;
+  }
+}
