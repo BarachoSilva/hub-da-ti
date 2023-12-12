@@ -132,3 +132,33 @@ h2 {
     text-decoration: underline;
     margin: 0 5px;
   }
+
+@media screen and (max-width: 540px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ul {
+    display: block; 
+  }
+
+  .ul.active {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .ul li {
+    margin-bottom: 10px;
+  }
+
+  .nav-toggle {
+    display: block; 
+    cursor: pointer;
+  }
+
+  .nav-toggle img {
+    width: 30px; 
+    height: auto;
+  }
+}
