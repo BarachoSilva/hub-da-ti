@@ -196,62 +196,39 @@
         <img
           class="profile"
           src="./assets/images/joyce.jpg"
-          alt="Foto do Joyce"
+          alt="Foto da Joyce"
         />
       </section>
+      <h2>Fale conosco!</h2>
+      <h3>Envie-nos sua opinão, dúvida ou sugestão!</h3>
 
       <form action="" class="form">
-        <h2>Quer falar conosco?</h2>
-        <h4>Envie-nos sua opinão, dúvida ou sugestão!</h4>
-        <section class="sectionForm">
-          <div class="data">
-            <label for="">Nome:</label>
-            <input
-              type="text"
-              name="userName"
-              placeholder="Seu nome completo"
-            />
+        
 
-           <label for="">E-mail:</label>
-            <input
-              type="email"
-              name="userEmail"
-              placeholder="seuemail@exemplo.com"
-            />
+        <label for="username">Nome:</label>
+        <input type="text" id="username" name="username" placeholder="Seu nome completo">
 
-            <label for="">O que você quer nos dizer?</label>
-            <textarea name="userComment" id="" cols="30" rows="4"></textarea>
-          </div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
 
-          <div class="tech">
-            <p>Você gosta de Tecnologia?</p>
-            <label for="sim">Sim</label>
-            <input id="sim" type="radio" name="exercise" value="1" />
-            <label for="nao">Não</label>
-            <input id="nao" type="radio" name="exercise" value="2" />
-            <p>Por onde você lê seus tópicos favoritos?</p>
-            <label for="books">Livros</label>
-            <input id="books" type="checkbox" name="books" />
-            <label>Sites</label>
-            <input type="checkbox" name="web" />
-            <label>Aplicativos</label>
-            <input type="checkbox" name="apps" />
-            <label>Revistas</label>
-            <input type="checkbox" name="magazines" />
-            <p>Qual área da tecnologia faz seu coração bater mais forte?</p>
-            <select name="tech" id="">
-              <option value=""></option>
-              <option value="1">Front End</option>
-              <option value="2">Back End</option>
-              <option value="3">Dados</option>
-              <option value="4">Segurança</option>
-              <option value="5">Inteligência Artificial</option>
-            </select>
+        <label for="tech">Qual sua área tech preferida?</label>
 
-            <button id="#form-button" value="submit">Enviar</button>
-          </div>
-        </section>
+        <select name="tech" id="tech">
+          <option value=""></option>
+          <option value="1">Front End</option>
+          <option value="2">Back End</option>
+          <option value="3">Dados</option>
+          <option value="4">Segurança</option>
+          <option value="5">Inteligência Artificial</option>
+        </select>
+
+        <label for="mensagem">Escreva sua mensagem:</label>
+        <textarea name="userComment" id="mensagem" cols="30" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
       </form>
+      <div class="final"></div>
+      
     </main>
 
     <footer>
@@ -261,5 +238,7 @@
       <p>Clique abaixo e conheça a Proz Educação</p>
       <a href="https://prozeducacao.com.br/" target="_blank">Proz Educação</a>
     </footer>
+
+    
   </body>
 </html>

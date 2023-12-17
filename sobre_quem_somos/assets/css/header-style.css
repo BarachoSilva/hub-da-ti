@@ -8,23 +8,20 @@
 }
 
 .header {
-  width: 90vw;
+  width: 95vw;
   height: 24vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-transform: uppercase;
- 
 }
 .logo {
   width: 140px;
   height: 140px;
-  margin-top: 8px;
-  
 }
 .nav {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
 }
@@ -38,4 +35,7 @@
 a {
   text-decoration: none;
   color: #f4f3ee;
+}
+a:hover {
+  opacity: 0.6
 }
