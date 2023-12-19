@@ -1,15 +1,20 @@
-# codigo-e-cafe
+# Projeto Hub da TI
 
-Nós, do grupo 2 (B) começamos produzindo o esqueleto do site com a proposta de ser um blog voltado à divulgação de tecnologias de programação.
+![Logotipo Blog da TI](img/hub.png)
 
-Fizemos um primeiro esboço utilizando o site figma.com e como produto final montamos o seguinte modelo, conforme linkado abaixo:
+Grubo B - Turma 17 - ProzEducação2023
 
-https://www.figma.com/file/1X3popV4LQJKSQHEcFpiVW/SPRINT-1
+<p> Projeto educacional para criação de um blog voltado à divulgação na área de TI. </p>
 
-Posteriormente, seguimos para a etapa de pensar o visual do blog e arriscamos um primeiro formato da página home utilizando também do figma obtendo um layout mais detalhado conforme linkado acaibo:
+<p align="center">
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
-https://www.figma.com/file/kkItYgeKbRD4cFymVaGDbP/Template_blogTI?type=design&node-id=1-2&mode=design&t=dMA6uo3VpOM8EB7i-0
+<h2 align="center">
+    :construction:  Projeto em construção  :construction:
+</h2>
 
-No terceiro momento partimos para as linhas de código HTML e replicamos o modelo feito na aula 11, referente ao site de pontos turísticos da Europa.
+# Autores
 
-No quarto momento percebemos que do site figma.com podemos extrair o código CSS referente a cada elemento gráfico e textual composto pelas ferramentas do site. Nesse momento pretendemos compor a disposição dos componentes visuais a partir desse diálogo entre o CSS vindo do figma.com e o código HTML utilizando do Vscode.
+| [<img loading="lazy" src="./quem_somos/assets/images/thais.jpg" width=115><br><sub>Thais D'avilla</sub>](https://github.com/ThaisDavilla) |  [<img loading="lazy" src="./quem_somos/assets/icons/linkedin.png" width=115><br><sub>Alex Baracho</sub>](https://github.com/BarachoSilva) |  [<img loading="lazy" src="./quem_somos/assets/images/victor.jpg" width=115><br><sub>Victor Moreira</sub>](https://github.com/victoradmoreira) |  [<img loading="lazy" src="./quem_somos/assets/images/joyce.jpg" width=115><br><sub>Joice JeniSilva</sub>](https://github.com/JoiceJeni) |
+| :---: | :---: | :---: | :---: |
