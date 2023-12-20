@@ -2,7 +2,7 @@
 
 <img src="./img/hub.png" alt="Logotipo do Blog"/>
 
-Grubo B - Turma 17 - ProzEducação2023
+Grupo B - Turma 17 - ProzEducação2023
 
 <p> Projeto educacional para criação de um blog voltado à divulgação na área de TI. </p>
 
