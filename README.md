@@ -1,6 +1,6 @@
 # Projeto Hub da TI
 
-<img   width: 140px; height: 140px; class="logo" src="./img/hub.png" alt="Logotipo do Blog"/>
+<img src="./img/hub.png" alt="Logotipo do Blog"/>
 
 Grubo B - Turma 17 - ProzEducação2023
 
