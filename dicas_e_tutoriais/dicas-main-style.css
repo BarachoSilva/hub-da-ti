@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2b2d42;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f4f3ee;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 12px
+}
+
+h2 {
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  margin: 60px 60px 24px 60px;
+}
+
+h4 {
+  margin: 24px;
+}
+
+.imagemdicas {
+  height: 100px;
+  width: 160px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  padding: 24px;
+  border: solid 2px white;
+  margin: 12px 60px 12px 60px;
+}

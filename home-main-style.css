@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2b2d42;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f4f3ee;
+}
+
+h1 {
+  text-align: center;
+  padding: 12px;
+}
+
+h2 {
+  text-align: center;
+  padding: 12px;
+}
+
+ul li {
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.telahome {
+  margin: auto;
+  padding: 12px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 12px;
+  border: solid 2px white;
+  margin: 12px 60px 12px 60px;
+}
