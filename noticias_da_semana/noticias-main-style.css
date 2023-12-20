@@ -35,6 +35,43 @@ ul li {
   justify-content: space-around;
 }
 
+h4 {
+  text-align: center;
+}
+
+.calendar {
+  max-width: 760px;
+  margin: 10px auto;
+  background-color: #4d4f6d;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dias-semana {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.dias-numericos {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.dias-semana span{
+  display: inline-block;
+  width: 14.2%;
+  font-weight: bold;
+  color: burlywood;
+}
+.dias-numericos span{
+  display: inline-block;
+  width: 14.2%;
+  margin: 8px 0;
+}
+
 section {
   display: flex;
   justify-content: space-around;
