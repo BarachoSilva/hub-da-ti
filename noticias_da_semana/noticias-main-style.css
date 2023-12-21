@@ -7,23 +7,15 @@
   color: #f4f3ee;
 }
 
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 200;
-  padding: 12px
+main {
+  background-color: #4d4f6d;
 }
 
 h2 {
   text-align: center;
   padding: 12px;
   margin-bottom: 40px;
-}
-
-ul li {
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
+  background-color: #4d4f6d;
 }
 
 .imagemnoticias {
@@ -37,56 +29,67 @@ ul li {
 
 h4 {
   text-align: center;
-}
-
-.calendar {
-  max-width: 760px;
-  margin: 10px auto;
+  margin-bottom: 20px;
   background-color: #4d4f6d;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.dias-semana {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
+table {
+  border-collapse: collapse;
+  width: 20%;
+  display: block;
+  margin-left: 400px;
+  background-color: #4d4f6d;
 }
 
-.dias-numericos {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.dias-semana span{
-  display: inline-block;
-  width: 14.2%;
+th, td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: center;
   font-weight: bold;
-  color: burlywood;
 }
-.dias-numericos span{
-  display: inline-block;
-  width: 14.2%;
-  margin: 8px 0;
+
+th {
+  background-color: #4d4f7d;
+}
+
+td {
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: black;
+}
+
+.current-day {
+  background-color: #4d5f6d;
+  color: white;
+}
+
+.other-month {
+  color: #aaa;
+  background-color: #4d4f6d;
+
 }
 
 section {
+  background-color: #4d4f6d;
+}
+
+div {
   display: flex;
   justify-content: space-around;
-  text-align: left;
-  padding: 24px;
-  border: solid 2px white;
-  margin: 12px 60px 12px 60px;
+  padding: 12px;
+  background-color: #2b2d42;
+  margin: 12px 30px 30px 12px;
+  border-radius: 16px;
 }
 
-section p {
-  padding: 24px;
-  font-size: small;
+div p {
+  padding: 40px;
 }
 
-section h3 {
-  padding: 24px;
-  margin-top: 40px;
+div h3 {
+  padding: 10px;
+  font-size: medium;
+  line-height: 1.5em;
 }

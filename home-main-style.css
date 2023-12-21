@@ -7,20 +7,31 @@
   color: #f4f3ee;
 }
 
+main {
+  background-color: #4d4f6d;
+}
+
 h1 {
   text-align: center;
   padding: 12px;
+  background-color: #4d4f6d;
+}
+
+main ul {
+  background-color: #4d4f6d;
 }
 
 h2 {
   text-align: center;
   padding: 12px;
+  background-color: #4d4f6d;
 }
 
-ul li {
+main ul li {
   text-align: center;
   padding: 12px;
   text-decoration: none;
+  background-color: #4d4f6d;
 }
 
 .telahome {
@@ -30,6 +41,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #4d4f6d;
 }
 
 section {
@@ -39,4 +51,5 @@ section {
   padding: 12px;
   border: solid 2px white;
   margin: 12px 60px 12px 60px;
+  border-radius: 16px;
 }
