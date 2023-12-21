@@ -7,17 +7,15 @@
   color: #f4f3ee;
 }
 
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 200;
-  padding: 12px
+main {
+  background-color: #4d4f6d;
 }
 
 h2 {
   text-align: center;
   padding: 12px;
   margin-bottom: 40px;
+  background-color: #4d4f6d;
 }
 
 h3 {
@@ -38,10 +36,29 @@ h4 {
 }
 
 section {
+  background-color: #4d4f6d;
+  margin-bottom: 12px;
+}
+
+div {
   display: flex;
-  justify-content: left;
-  text-align: left;
-  padding: 24px;
-  border: solid 2px white;
-  margin: 12px 60px 12px 60px;
+  justify-content: space-around;
+  padding: 12px;
+  background-color: #2b2d42;
+  margin: 12px 30px 30px 12px;
+  border-radius: 16px;
+}
+
+div p {
+  margin-bottom: 20px;
+}
+
+div h3 {
+  padding: 10px;
+  line-height: 1.5em;
+  font-size: medium;
+}
+
+div a {
+  padding: 20px;
 }
