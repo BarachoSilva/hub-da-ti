@@ -43,7 +43,7 @@ section {
 div {
   display: flex;
   justify-content: space-around;
-  padding: 12px;
+  padding: 16px;
   background-color: #2b2d42;
   margin: 12px 30px 30px 12px;
   border-radius: 16px;
@@ -51,10 +51,10 @@ div {
 
 div p {
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 div h3 {
-  padding: 10px;
   line-height: 1.5em;
   font-size: medium;
 }

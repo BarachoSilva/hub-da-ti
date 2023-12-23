@@ -1,10 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #2b2d42;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f4f3ee;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2b2d42;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f4f3ee;
 }
 
 main {
@@ -35,9 +35,9 @@ h4 {
 
 table {
   border-collapse: collapse;
-  width: 20%;
-  display: block;
-  margin-left: 400px;
+  display: table;
+  width: auto;
+  margin: auto;
   background-color: #4d4f6d;
 }
 
@@ -78,18 +78,19 @@ section {
 div {
   display: flex;
   justify-content: space-around;
-  padding: 12px;
+  padding: 16px;
   background-color: #2b2d42;
   margin: 12px 30px 30px 12px;
   border-radius: 16px;
 }
 
 div p {
-  padding: 40px;
+  padding: 20px;
 }
 
 div h3 {
-  padding: 10px;
+  padding: 40px;
   font-size: medium;
   line-height: 1.5em;
+  margin-left: 40px;
 }
