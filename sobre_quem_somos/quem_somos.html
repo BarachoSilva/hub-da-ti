@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/css/header-style.css" />
-    <link rel="stylesheet" href="./assets/css/main-style.css" />
-    <link rel="stylesheet" href="./assets/css/footer-style.css">
+    <link rel="stylesheet" href="./styles/header-style.css" />
+    <link rel="stylesheet" href="./styles/main-style.css" />
+    <link rel="stylesheet" href="./styles/footer-style.css">
+    <script src="./script.js" defer></script>
     <title>Quem Somos</title>
   </head>
   <body>
@@ -169,21 +170,21 @@
             profissionais.
           </p>
           <nav>
-            <a href="" target="_blank">
+            <a href="https://www.linkedin.com/in/joice-silva-309b56246/" target="_blank">
               <img
                 class="redes"
                 src="./assets/icons/linkedin.png"
                 alt="Ícone de acesso ao Linkedin da desenvolvedora."
               />
             </a>
-            <a href="" target="_blank">
+            <a href="https://github.com/JoiceJeni" target="_blank">
               <img
                 class="redes"
                 src="./assets/icons/github.png"
                 alt="Ícone de acesso ao GitHub da desenvolvedora."
               />
             </a>
-            <a href="" target="_blank">
+            <a href="http://instagram.com/joyce.jenisilva/" target="_blank">
               <img
                 class="redes"
                 src="./assets/icons/instagram.png"
@@ -207,20 +208,11 @@
 
         <label for="username">Nome:</label>
         <input type="text" id="username" name="username" placeholder="Seu nome completo">
+        <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
 
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
-
-        <label for="tech">Qual sua área tech preferida?</label>
-
-        <select name="tech" id="tech">
-          <option value=""></option>
-          <option value="1">Front End</option>
-          <option value="2">Back End</option>
-          <option value="3">Dados</option>
-          <option value="4">Segurança</option>
-          <option value="5">Inteligência Artificial</option>
-        </select>
+        <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
 
         <label for="mensagem">Escreva sua mensagem:</label>
         <textarea name="userComment" id="mensagem" cols="30" rows="4"></textarea>
@@ -233,10 +225,13 @@
 
     <footer>
       <p>Todos os direitos reservados <span>&#169;</span> 2023 Blog da TI</p>
-      <p>Veja o repósitório da página:</p>
-      <a href="https://github.com/BarachoSilva/codigo-e-cafe" target="_blank">Repositório</a>
-      <p>Clique abaixo e conheça a Proz Educação</p>
-      <a href="https://prozeducacao.com.br/" target="_blank">Proz Educação</a>
+      <p>Conheça a Proz Educação</p>
+      <a href="https://prozeducacao.com.br/" target="_blank"><img src="./assets/icons/proz_logo.png" alt="Logo da Proz Educação"></a>
+      <p>Visite o repositório do blog</p>
+      
+      <a href="https://github.com/BarachoSilva/codigo-e-cafe" target="_blank"><img class="redes" src="./assets/icons/github.png" alt="Ícone do repositório do blog no GitHub."></a>
+      
+     
     </footer>
 
     

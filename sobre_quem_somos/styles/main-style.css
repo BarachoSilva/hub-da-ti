@@ -1,7 +1,6 @@
 main {
   background-color: #4d4f6d;
 }
-
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -18,7 +17,6 @@ h1 {
   justify-content: space-around;
   border-radius: 10px;
 }
-
 .profile {
   width: 100%;
   border-radius: 50%;
@@ -28,7 +26,6 @@ h1 {
   padding: 3.7px;
   border: #778da9 solid 3px;
 }
-
 .div {
   width: 70%;
   height: 30vh;
@@ -36,7 +33,6 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 .name {
   font-size: 1.5em;
   font-weight: 400;
@@ -55,18 +51,15 @@ h3{
   padding: 8px;
   background-color: #4d4f6d;
 }
-
 .form {
   width: 90vw;
-  height: 80vh;
+  height: 70vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
 }
-
-
 label {
   font-size: 1.2em;
   padding: 8px;
@@ -80,10 +73,37 @@ input {
   border-radius: 10px;
   cursor: pointer;
 }
-select {
-  width: 40vw;
-  padding: 4px;
-  border-radius: 10px;
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+.visible {
+  display: block;
 }
 textarea {
   width: 40vw;
@@ -106,7 +126,7 @@ button:hover {
   transition: 0.3s;
 }
 .final{
-  width: 100vw;
+  width: 98vw;
   height: 10vh;
   background-color: #4d4f6d;
 }
