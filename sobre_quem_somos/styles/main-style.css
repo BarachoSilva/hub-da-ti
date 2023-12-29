@@ -41,12 +41,12 @@ h1 {
   width: 25px;
   height: 25px;
 }
-h2{ 
+h2 {
   text-align: center;
   padding: 4px;
   background-color: #4d4f6d;
 }
-h3{
+h3 {
   text-align: center;
   padding: 8px;
   background-color: #4d4f6d;
@@ -64,7 +64,6 @@ label {
   font-size: 1.2em;
   padding: 8px;
   cursor: pointer;
-  
 }
 input {
   width: 40vw;
@@ -75,7 +74,7 @@ input {
 }
 .helper-text {
   display: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: darkred;
 }
 .required-popup::after {
@@ -83,9 +82,9 @@ input {
   position: absolute;
   top: 0;
   right: 0;
-  color: #DFDFDF;
-  font-size: .65rem;
-  padding: .2rem .3rem;
+  color: #dfdfdf;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
   width: auto;
   display: block;
   background-color: #202020;
@@ -93,12 +92,12 @@ input {
 
 input.error {
   border: solid 2px #992020;
-  background-color: #CCBBBB;
+  background-color: #ccbbbb;
   color: #662020;
 }
 
 input.correct {
-  background-color: #BBCCBB;
+  background-color: #bbccbb;
   border: solid 2px #206620;
   color: #206620;
 }
@@ -125,7 +124,7 @@ button:hover {
   opacity: 0.5;
   transition: 0.3s;
 }
-.final{
+.final {
   width: 98vw;
   height: 10vh;
   background-color: #4d4f6d;

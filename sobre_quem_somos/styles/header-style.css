@@ -37,5 +37,17 @@ a {
   color: #f4f3ee;
 }
 a:hover {
-  opacity: 0.6
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 100%;
+    flex-direction: column;
+  }
+  .ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+  }
 }
