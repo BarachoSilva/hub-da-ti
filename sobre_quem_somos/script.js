@@ -1,8 +1,10 @@
 let usernameInput = document.getElementById("username");
 let usernameLabel = document.querySelector('label[for="username"]');
+let usernameHelper = document.getElementById("username-helper");
 
 let emailInput = document.getElementById("email");
 let emailLabel = document.querySelector('label[for="email"]');
+let emailHelper = document.getElementById("email-helper");
 
 function mostraPopup(input, label) {
     input.addEventListener("focus", () => {
@@ -29,7 +31,7 @@ function mostraPopup(input, label) {
     if (valor.length < 3) {
       usernameInput.classList.remove("correct");
       usernameInput.classList.add("error");
-      usernameHelper.innerText = "Seu username deve ter 3 ou mais caracteres";
+      usernameHelper.innerText = "Seu nome deve ter 3 ou mais caracteres";
       usernameHelper.classList.add("visible");
     } else {
       usernameInput.classList.remove("error");
