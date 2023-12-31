@@ -24,6 +24,8 @@
 .nav {
   display: none;
   flex-direction: column;
+  background-color: #4d4f6d;
+  padding: 10px;
 }
 
 .menu-btn {
@@ -142,6 +144,15 @@ footer {
     height: 100%;
     flex-direction: column;
   }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
   .ul {
     display: none;
     flex-direction: column;
@@ -149,7 +160,7 @@ footer {
     padding: 4px;
   }
 
-  .menu-btn {
-    display: block;
+  .ul.active {
+    display: flex;
   }
 }
