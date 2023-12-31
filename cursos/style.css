@@ -20,16 +20,37 @@
   width: 140px;
   height: 140px;
 }
+
 .nav {
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
+  display: none;
+  flex-direction: column;
 }
+
+.menu-btn {
+  font-size: 1.5em;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4d4f6d;
+  color: #f4f3ee;
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu-btn:hover {
+  background-color: #6b6e91;
+}
+
 .ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ul li {
+  padding: 7.5px;
+  text-align: center;
+  border-bottom: 1px solid #6b6e91;
 }
 
 a {
@@ -122,8 +143,13 @@ footer {
     flex-direction: column;
   }
   .ul {
+    display: none;
     flex-direction: column;
     align-items: center;
     padding: 4px;
+  }
+
+  .menu-btn {
+    display: block;
   }
 }
