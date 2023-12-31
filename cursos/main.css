@@ -1,0 +1,67 @@
+main {
+  background-color: #4d4f6d;
+  padding: 10px;
+}
+
+.linkCurso {
+  display: inline-block;
+  background-color: #4d4f6d;
+  color: #f4f3ee;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.linkCurso:hover {
+  background-color: #6b6e91;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 20px;
+  background-color: #4d4f6d;
+}
+h2 {
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 40px;
+}
+section {
+  width: 95vw;
+  height: 40vh;
+  margin: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.curso1,
+.curso2,
+.curso3,
+.curso4 {
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  list-style-type: none;
+}
+.logocursos {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+.redes {
+    width: 25px;
+    height: 25px;
+  }
