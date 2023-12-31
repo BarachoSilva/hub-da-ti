@@ -140,61 +140,16 @@ footer {
   line-height: 30px;
   margin: 12px;
 }
-/* Seu código CSS existente */
 
-/* ... (seu código anterior) ... */
 
 @media screen and (max-width: 1024px) {
   .header {
     height: 100%;
     flex-direction: column;
   }
-
-  .menu-btn {
-    display: block;
-    order: -1; /* Mudei a ordem para posicionar o botão de menu no início da linha */
-  }
-
-  .nav {
-    margin-top: 10px;
-  }
-
   .ul {
-    display: none;
     flex-direction: column;
     align-items: center;
     padding: 4px;
-  }
-
-  .ul.active {
-    display: flex;
-  }
-
-  @media screen and (max-width: 768px) {
-    .header {
-      flex-direction: row; /* Alterado para exibir o menu ao lado */
-    }
-
-    .ul {
-      display: flex;
-      flex-direction: row; /* Exibir itens do menu na horizontal */
-      position: absolute;
-      top: 50px;
-      left: 0;
-      width: 100%;
-      background-color: #4d4f6d;
-      z-index: 1;
-    }
-
-    .ul.active {
-      flex-direction: column;
-    }
-
-    .ul li {
-      border-bottom: none;
-      padding: 10px;
-      width: 100%;
-      text-align: center;
-    }
   }
 }
