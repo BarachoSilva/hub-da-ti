@@ -27,7 +27,7 @@
   background-color: #4d4f6d;
   padding: 10px;
   position: absolute;
-  top: 80px; /* Ajusta a posição do menu dropdown */
+  top: 80px; 
   left: 0;
   width: 100%;
 }
@@ -40,8 +40,10 @@
   color: #f4f3ee;
   border: none;
   padding: 10px;
-  margin: 0;
-  order: -1; /* Muda a ordem do botão no layout */
+  margin-top: -120px;
+  margin-left: 300px;
+  order: 0; 
+  border-radius: 10px;
 }
 .menu-btn:hover {
   background-color: #6b6e91;
@@ -96,7 +98,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
-  padding: 20px;
+  padding: 10px;
   background-color: #4d4f6d;
 }
 h2 {
@@ -107,8 +109,9 @@ h2 {
 section {
   width: 95vw;
   height: 40vh;
-  margin: 10px;
-  margin-bottom: 40px;
+  margin: 20px;
+  margin-top: 150px;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -118,11 +121,8 @@ section {
 .curso2,
 .curso3,
 .curso4 {
-  margin-top: 10px;
-  border-radius: 10px;
   overflow: hidden;
   list-style-type: none;
-  margin-bottom: 20px;
 }
 .logocursos {
   max-width: 150px;
@@ -145,31 +145,30 @@ footer {
   margin: 12px;
 }
 
-
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  /* Adjust header styles for smaller screens */
   .header {
-    height: auto;
     flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  /* Adjust navigation styles for smaller screens */
+  .nav {
+    top: 140px; /* Adjust top position */
+    padding: 15px; /* Adjust padding */
+    padding-right: 100px;
+    padding-left: 100px;
   }
 
   .menu-btn {
-    order: 0; 
+    margin-top: 0;
+    margin-left: 520px;
+    margin-right: 30px;
   }
-
-  .nav {
-    display: flex;
-    position: static;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-} 
-.curso1,
-  .curso2,
-  .curso3,
-  .curso4 {
-    margin-top: 20px;
-    margin-bottom: 40px; 
-  }
+  
 }
+
