@@ -23,16 +23,43 @@ body {
   width: 140px;
   height: 140px;
 }
+
 .nav {
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-}
-.ul {
+  display: none;
+  flex-direction: column;
+  background-color: #4d4f6d;
+  padding: 10px;
+  position: absolute;
+  top: 80px; /* Ajusta a posição do menu dropdown */
+  left: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
+}
+
+.menu-btn {
+  font-size: 1.5em;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4d4f6d;
+  color: #f4f3ee;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  order: -1; /* Muda a ordem do botão no layout */
+}
+.menu-btn:hover {
+  background-color: #6b6e91;
+}
+
+.ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ul li {
+  padding: 7.5px;
+  text-align: center;
+  border-bottom: 1px solid #6b6e91;
 }
 
 a {
@@ -40,7 +67,7 @@ a {
   color: #f4f3ee;
 }
 a:hover {
-  opacity: 0.6
+  opacity: 0.6;
 }
 
 
@@ -112,45 +139,39 @@ h2 {
   overflow: hidden;
 }
 
-.footer {
-  background-color: #1d1e2d;
-  color: #f4f3ee;
-  padding: 10px;
+footer {
+  width: 96vw;
+  height: 25vh;
   text-align: center;
+  line-height: 30px;
+  margin: 12px;
 }
 
-.footer a {
-  color: #f4f3ee;
-  text-decoration: underline;
-  margin: 0 5px;
-}
 
-@media screen and (max-width: 540px) {
-  .nav {
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto;
     flex-direction: column;
+  }
+
+  .menu-btn {
+    order: 0; 
+  }
+
+  .nav {
+    display: flex;
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     text-align: center;
   }
-
-  .ul {
-    display: block;
-  }
-
-  .ul.active {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ul li {
-    margin-bottom: 10px;
-  }
-
-  .nav-toggle {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-toggle img {
-    width: 30px;
-    height: auto;
+} 
+.curso1,
+  .curso2,
+  .curso3,
+  .curso4 {
+    margin-top: 20px;
+    margin-bottom: 40px; 
   }
 }
