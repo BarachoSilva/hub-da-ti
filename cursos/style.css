@@ -16,9 +16,11 @@
   justify-content: space-around;
   text-transform: uppercase;
 }
+
 .logo {
   width: 140px;
   height: 140px;
+  margin-bottom: 20px;
 }
 
 .nav {
@@ -45,6 +47,7 @@
   order: 0;
   border-radius: 10px;
 }
+
 .menu-btn:hover {
   background-color: #6b6e91;
 }
@@ -65,6 +68,7 @@ a {
   text-decoration: none;
   color: #f4f3ee;
 }
+
 a:hover {
   opacity: 0.6;
 }
@@ -101,29 +105,34 @@ h1 {
   padding: 10px;
   background-color: #4d4f6d;
 }
+
 h2 {
   text-align: center;
   padding: 12px;
   margin-bottom: 40px;
 }
+
 section {
   width: 95vw;
-  height: 40vh;
-  margin: 20px;
+  height: auto;
+  margin: 50px 0px 10px;
   margin-top: 150px;
   margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
 }
+
 .curso1,
 .curso2,
 .curso3,
 .curso4 {
-  overflow: hidden;
   list-style-type: none;
 }
+
 .logocursos {
   max-width: 150px;
   width: 100%;
@@ -137,28 +146,39 @@ section {
   height: 25px;
 }
 
-@media only screen and (max-width: 768px) {
-  /* Adjust header styles for smaller screens */
+footer {
+  width: 96vw;
+  height: 25vh;
+  text-align: center;
+  line-height: 30px;
+  margin: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
-  }
-  .logo {
-    margin-bottom: 20px;
+    height: 100%;
   }
 
-  /* Adjust navigation styles for smaller screens */
+  .ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+  }
+
   .nav {
-    top: 140px; /* Adjust top position */
-    padding: 15px; /* Adjust padding */
+    top: 140px;
+    padding: 15px;
     padding-right: 100px;
     padding-left: 100px;
   }
 
   .menu-btn {
+    top: -150px;
+    position: relative;
     margin-top: 0;
-    margin-left: 520px;
+    margin-left: 250px;
     margin-right: 30px;
   }
 }
