@@ -1,11 +1,11 @@
 // declarar a lista de postagens dinâmicas
 const arrayPostagensJaneiro = [
   {
-    tituloMateria: "ISRO estudará buracos negros com lançamento de novo satélite, o segundo globalmente:",
-    textoMateria: "No Ano Novo, a Organização Indiana de Investigação Espacial (ISRO) iniciou a sua expedição espacial com o lançamento bem sucedido do seu satélite inaugural ...",
-    imagem: "https://thetechportal.com/wp-content/uploads/2021/03/EvS5xK4VcAA4dOq-e1614580093918-800x430.jpg",
-    textoOrigem: "CNN Brasil - 20/12/2023",
-    link: "https://thetechportal.com/2024/01/01/isro-to-study-black-holes-with-new-satellite-launch-second-globally/",
+    tituloMateria: "Conheça quais serão as linguagens de programação com maior produção em 2024",
+    textoMateria: "Se com o novo ano você decidiu aumentar sua empregabilidade aprendendo uma nova linguagem de programação ou fazendo uma mudança profissional direta ...",
+    imagem: "https://i.blogs.es/2e97c9/james-harrison-vpoexr5wmr4-unsplash/840_560.jpeg",
+    textoOrigem: "Gearrice - 01/01/2024",
+    link: "https://www.gearrice.com/update/these-will-be-the-programming-languages-with-the-most-output-in-2024-you-can-start-learning-them-for-free/",
     diaPostagem: "1"
   },
 ]
@@ -73,15 +73,14 @@ for (let i = 0; i < arrayPostagensJaneiro.length; i++){
 
 // criar o elemento
 const div = document.createElement("div")
+div.id=`post-${[i + 1]}`
 
 // popular o elemento
 div.innerHTML =
 `<h3>${arrayPostagensJaneiro[i].tituloMateria}<p>${arrayPostagensJaneiro[i].textoMateria}</p>
 <a class="saibaMais" href=${arrayPostagensJaneiro[i].link}" target="_blank">
-Saiba mais</a></h3>
-<a href="${arrayPostagensJaneiro[i].link}" target="_blank"><img height="200px" width="250px" 
-src="${arrayPostagensJaneiro[i].imagem}">
-<p>${arrayPostagensJaneiro[i].textoOrigem}</p>`
+Saiba mais</a></h3><p><img height="200px" width="250px"
+src="${arrayPostagensJaneiro[i].imagem}">${arrayPostagensJaneiro[i].textoOrigem}</p>`
 
 
 // adicionar o elemento ao DOM
@@ -137,43 +136,31 @@ function criarCalendario() {
   }
 }
 
-// Função para destacar a semana ao passar o cursor
-function destacarSemana(event) {
-    // Limpando a cor de fundo de todas as células da tabela
-    let todasCelulas = document.querySelectorAll('#calendar td');
-    todasCelulas.forEach(celula => celula.style.backgroundColor = '');
+// adicionar evento de acesso à postagem
+function adicionarEventoDestaque() {
+  let cells = document.getElementsByTagName('td');
+        for (let i = 0; i < cells.length; i++) {
+    cells[i].addEventListener('click', function() {
+      // obter a data associada ao clique
+      let date = this.textContent;
 
-    // Destacando a semana da célula pai da célula onde o cursor está
-    let semana = event.target.parentNode;
-    semana.childNodes.forEach(celula => celula.style.backgroundColor = '#555');
+      // encontrar a postagem correspondente à data
+      let targetPost = arrayPostagensJaneiro.find(post => post.diaPostagem.includes(date));
+
+      // redirecionar para a postagem
+      if (targetPost) {
+        window.location.href = targetPost.link;
+      }
+    });
+  }
 }
 
-// Função para rolar a página até a postagem correspondente à semana clicada
-function rolarParaPostagem(event) {
-    // Obtendo a data da postagem correspondente à semana clicada
-    let semanaClicada = event.target.parentNode;
-    let dataSemanaClicada = semanaClicada.querySelector('.current-day').innerText;
-    let idPostagem = dataSemanaClicada.replaceAll('/', '-');
-
-    // Rolar até a postagem correspondente
-    let elementoPostagem = document.getElementById(idPostagem);
-    if (elementoPostagem) {
-        elementoPostagem.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-
-// Adicionando os ouvintes de eventos às células da tabela
-  let celulasTabela = document.querySelectorAll('#calendar td');
-  celulasTabela.forEach(celula => {
-   celula.addEventListener('mouseover', destacarSemana);
-   celula.addEventListener('click', rolarParaPostagem);
-  });
+// chamar as funções para inicializar o calendário e adicionar evento
+criarCalendario();
+adicionarEventoDestaque();
 
 function mudarMes(delta) {
   mesAtual += delta;
   criarCalendario();
   atualizarConteudo();
 }
-// chamar as funções para inicializar o calendário e adicionar evento
-criarCalendario();
-adicionarEventoDestaque();
