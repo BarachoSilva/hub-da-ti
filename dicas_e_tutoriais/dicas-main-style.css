@@ -1,14 +1,9 @@
-* {
+main {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #2b2d42;
+  background-color:  #4d4f6d;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f4f3ee;
-}
-
-main {
-  background-color: #4d4f6d;
+  max-width: inherit;
 }
 
 h2 {
@@ -16,14 +11,6 @@ h2 {
   padding: 12px;
   margin-bottom: 40px;
   background-color: #4d4f6d;
-}
-
-h3 {
-  margin: 60px 60px 24px 60px;
-}
-
-h4 {
-  margin: 24px;
 }
 
 .imagemdicas {
@@ -37,28 +24,38 @@ h4 {
 
 section {
   background-color: #4d4f6d;
-  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 div {
-  display: flex;
+  flex: 0 0 calc(33.333% - 24px);
+  display: block;
   justify-content: space-around;
   padding: 16px;
   background-color: #2b2d42;
-  margin: 12px 30px 30px 12px;
+  margin: 12px 0;
   border-radius: 16px;
 }
 
 div p {
-  margin-bottom: 20px;
   padding: 20px;
 }
 
 div h3 {
   line-height: 1.5em;
   font-size: medium;
+  margin-bottom: 20px;
 }
 
-div a {
-  padding: 20px;
+.saibaMais {
+  display: inline-block;
+  background-color: #4d4f6d;
+  color: #f4f3ee;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }

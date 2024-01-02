@@ -2,11 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-}
-body {
-  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
   background-color: #2b2d42;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #f4f3ee;
 }
 
@@ -19,10 +16,13 @@ body {
   justify-content: space-around;
   text-transform: uppercase;
 }
+
 .logo {
   width: 140px;
   height: 140px;
+  margin-bottom: 20px;
 }
+
 
 .nav {
   display: none;
@@ -30,7 +30,7 @@ body {
   background-color: #4d4f6d;
   padding: 10px;
   position: absolute;
-  top: 80px; /* Ajusta a posição do menu dropdown */
+  top: 80px;
   left: 0;
   width: 100%;
 }
@@ -43,9 +43,12 @@ body {
   color: #f4f3ee;
   border: none;
   padding: 10px;
-  margin: 0;
-  order: -1; /* Muda a ordem do botão no layout */
+  margin-top: -120px;
+  margin-left: 300px;
+  order: 0;
+  border-radius: 10px;
 }
+
 .menu-btn:hover {
   background-color: #6b6e91;
 }
@@ -66,10 +69,16 @@ a {
   text-decoration: none;
   color: #f4f3ee;
 }
+
 a:hover {
   opacity: 0.6;
 }
 
+main {
+  background-color: #4d4f6d;
+  padding: 10px;
+  padding-bottom: 20px;
+}
 
 .linkCurso {
   display: inline-block;
@@ -90,21 +99,12 @@ nav a:hover {
   color: blue;
 }
 
-.main {
-  background-color: #4d4f6d;
-  padding: 10px;
-}
-
 h1 {
-  color: #f4f3ee;
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
-  padding: 12px;
-}
-
-section {
-  margin-bottom: 40px;
+  padding: 10px;
+  background-color: #4d4f6d;
 }
 
 h2 {
@@ -113,14 +113,24 @@ h2 {
   margin-bottom: 40px;
 }
 
+section {
+  width: 95vw;
+  height: auto;
+  margin: 50px 0px 10px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
 .curso1,
 .curso2,
 .curso3,
 .curso4 {
-  background-color: #1d1e2d;
-  padding: 10px;
-  border-radius: 10px;
-  overflow: hidden;
   list-style-type: none;
 }
 
@@ -132,13 +142,14 @@ h2 {
   margin-right: 20px;
 }
 
-.curso1 p,
-.curso2 p,
-.curso3 p,
-.curso4 p {
-  overflow: hidden;
+.redes {
+  width: 25px;
+  height: 25px;
 }
 
+footer {
+  width: 96vw;
+  height: 25vh;
 footer {
   width: 96vw;
   height: 25vh;
@@ -147,11 +158,11 @@ footer {
   margin: 12px;
 }
 
-
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .header {
-    height: auto;
     flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
   }
 
   .menu-btn {
@@ -166,12 +177,12 @@ footer {
     width: 100%;
     text-align: center;
   }
-} 
-.curso1,
-  .curso2,
-  .curso3,
-  .curso4 {
-    margin-top: 20px;
-    margin-bottom: 40px; 
+
+  .menu-btn {
+    top: -150px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 250px;
+    margin-right: 30px;
   }
 }
