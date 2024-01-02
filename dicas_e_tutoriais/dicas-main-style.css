@@ -3,6 +3,7 @@ main {
   padding: 0;
   background-color:  #4d4f6d;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: inherit;
 }
 
 h2 {
@@ -23,18 +24,19 @@ h2 {
 
 section {
   background-color: #4d4f6d;
-  display: flow-root;
-  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 div {
-  display: flex;
+  flex: 0 0 calc(33.333% - 24px);
+  display: block;
   justify-content: space-around;
   padding: 16px;
   background-color: #2b2d42;
-  margin: 12px 30px 30px 12px;
+  margin: 12px 0;
   border-radius: 16px;
-  width: auto;
 }
 
 div p {
@@ -44,10 +46,7 @@ div p {
 div h3 {
   line-height: 1.5em;
   font-size: medium;
-}
-
-div a {
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .saibaMais {

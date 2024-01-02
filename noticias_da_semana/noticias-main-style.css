@@ -14,8 +14,12 @@ main {
 h2 {
   text-align: center;
   padding: 12px;
-  margin-bottom: 40px;
   background-color: #4d4f6d;
+}
+
+h4 {
+  text-align: center;
+  padding: 12px;
 }
 
 .imagemnoticias {
@@ -65,21 +69,21 @@ td:hover {
 }
 
 main div span {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 section {
   background-color: #4d4f6d;
   margin: auto auto auto auto;
-  display: flex;
+  display: flow-root;
   justify-content: space-around;
   weight: auto;
 }
 
 div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 16px;
   background-color: #2b2d42;
   margin: 12px 30px 30px 12px;
