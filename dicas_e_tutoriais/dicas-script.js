@@ -43,22 +43,26 @@ const arrayPostagens = [
   },
 ]
 
-for (let i = 0; i < arrayPostagens.length; i++){
+for (let i = 0; i < arrayPostagens.length; i++) {
+    // criando o elemento
+    const div = document.createElement("div");
+    div.id = `post-${[i + 1]}`;
 
-// criando o elemento
-const div = document.createElement("div")
-div.id=`post-${[i + 1]}`
+    // populando o elemento
+    div.innerHTML =
+        `<span>
+            <h3>
+                <p>${arrayPostagens[i].textoMateria}</p>
+                ${arrayPostagens[i].tituloMateria}
+            </h3>
+        </span>
+        <span>
+            <img height="80px" width="auto" src="${arrayPostagens[i].imagem}">
+            <p>${arrayPostagens[i].textoOrigem}</p>
+            <a class="saibaMais" href="${arrayPostagens[i].link}" target="_blank">Saiba mais</a>
+        </span>`;
 
-// populando o elemento
-div.innerHTML =
-`<span><h3><p>${arrayPostagens[i].textoMateria}
-</p>${arrayPostagens[i].tituloMateria}</h3></span>
-<span><img height="90px" width="auto" src="${arrayPostagens[i].imagem}">
-<p>${arrayPostagens[i].textoOrigem}</p><a class="saibaMais"
-href=${arrayPostagens[i].link}" target="_blank">Saiba mais</a></span>`
-
-
-// adicionando ao DOM
-const section = document.querySelector('section')
-section.appendChild(div)
+    // adicionando ao DOM
+    const section = document.querySelector('section');
+    section.appendChild(div);
 }
