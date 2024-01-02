@@ -27,12 +27,6 @@ h2 {
   justify-content: space-around;
 }
 
-h4 {
-  text-align: center;
-  margin-bottom: 20px;
-  background-color: #4d4f6d;
-}
-
 table {
   border-collapse: collapse;
   display: table;
@@ -56,10 +50,6 @@ td {
   cursor: pointer;
 }
 
-td:hover {
-  background-color: black;
-}
-
 .current-day {
   background-color: #4d5f6d;
   color: white;
@@ -68,7 +58,6 @@ td:hover {
 .other-month {
   color: #aaa;
   background-color: #4d4f6d;
-
 }
 
 section {
@@ -93,4 +82,35 @@ div h3 {
   font-size: medium;
   line-height: 1.5em;
   margin-left: 40px;
+}
+
+.saibaMais {
+  display: inline-block;
+  background-color: #4d4f6d;
+  color: #f4f3ee;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.navigation-buttons button {
+  background-color: #4d4f7d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navigation-buttons button:hover {
+  background-color: #2b2d42;
 }

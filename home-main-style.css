@@ -19,6 +19,8 @@ h1 {
 
 main ul {
   background-color: #4d4f6d;
+  display: block;
+  justify-content: center;
 }
 
 h2 {
@@ -42,6 +44,8 @@ main ul li {
   align-items: center;
   justify-content: space-around;
   background-color: #4d4f6d;
+  width: auto;
+  height: auto;
 }
 
 section {
