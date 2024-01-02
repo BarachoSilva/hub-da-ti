@@ -1,14 +1,8 @@
-* {
+main {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #2b2d42;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f4f3ee;
-}
-
-main {
   background-color: #4d4f6d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
@@ -19,6 +13,8 @@ h1 {
 
 main ul {
   background-color: #4d4f6d;
+  display: block;
+  justify-content: center;
 }
 
 h2 {
@@ -37,11 +33,11 @@ main ul li {
 .telahome {
   margin: auto;
   padding: 12px;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #4d4f6d;
+  width: auto;
+  height: 250px;
 }
 
 section {

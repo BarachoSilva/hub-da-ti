@@ -1,41 +1,41 @@
 const arrayPostagens = [
   {
-    textoMateria: "Quer aprender a fazer seu primeiro site usando HTML + CSS?",
-    tituloMateria: "Nesse vídeo Andriana te ensina a fazer um site simples dando várias dicas práticas! E mais! Usando apenas HTML e CSS...",
+    textoMateria: "Quer aprender a fazer seu primeiro site usando apenas HTML e CSS",
+    tituloMateria: "Nesse vídeo Andriana te ensina a fazer um site simples dando várias dicas práticas ...",
     imagem: "./img/youtube_adriana.png",
     textoOrigem: "Canal Adriana Saty",
     link: "https://www.youtube.com/watch?v=n_Etdr7Dbjs"
   },
   {
-    textoMateria: "Quer aprender a fazer seu primeiro portfólio de um modo fácil e rápido?",
-    tituloMateria: "Nesse vídeo Gabriela ensina como criar um portfolio rápido e fácil do zero...",
+    textoMateria: "Quer aprender a fazer seu primeiro portfólio de um modo fácil e rápido",
+    tituloMateria: "Nesse vídeo Gabriela ensina como criar um portfolio rápido e fácil do zero ...",
     imagem: "./img/youtube_gabriela.png",
     textoOrigem: "Canal Gabriela Pinheiro",
     link: "https://www.youtube.com/watch?v=jZurhyJTJOM"
   },
   {
-    textoMateria: "APRENDA C# BÁSICO EM 30 MINUTOS!",
-    tituloMateria: "Guia do vídeo: 00:00 - Introdução, 01:15 - Variáveis, 04:36 - Métodos, 06:35...",
+    textoMateria: "Quer aprender C#",
+    tituloMateria: "Descubra como desenvolver programas na linguagem em apenas 30 minutos ...",
     imagem: "./img/crie_seus_jogos.png",
     textoOrigem: "Canal Crie Seus Jogos",
     link: "https://www.youtube.com/watch?v=DA-DQsmPItU"
   },
   {
-    textoMateria: "Aprenda C++ EM UM VÍDEO (Tutorial Básico de Programação)",
-    tituloMateria: "Preparado(a) para dar o primeiro passo em sua caminhada rumo ao desenvolvimento de Jogos? Então confira os vários cursos...",
+    textoMateria: "Quer aprender C++",
+    tituloMateria: "Preparado(a) para dar o primeiro passo em sua caminhada rumo ao desenvolvimento de Jogos? Então confira os vários cursos ...",
     imagem: "./img/uniday_studio.png",
-    textoOrigem: "Canal Uniday Studio  -  2020 - By: Guilherme Teres Nunes",
+    textoOrigem: "Canal Uniday Studio",
     link: "https://www.youtube.com/watch?v=McbdxZ3Se2U"
   },
   {
-    textoMateria: "APRENDA JAVASCRIPT MODERNO (2021) // TUTORIAL MAIS COMPLETO DA INTERNET",
-    tituloMateria: "Acesse agora mesmo e inicie sua jornada...",
+    textoMateria: "Quer aprender Javascript de um jeito moderno",
+    tituloMateria: "Acesse agora mesmo e inicie sua jornada com o tutorial mais completo da internet ...",
     imagem: "./img/danki_code.png",
     textoOrigem: "Canal Danki Code",
     link: "https://www.youtube.com/watch?v=P9xBhwugj4M"
   },
   {
-    textoMateria: "Como sair do ZERO em JAVA em 1h - com @kipperdev",
+    textoMateria: "Como sair do zero em Java em apenas 1 hora",
     tituloMateria: "Para quem programa e quer dar os primeiros passos na linguagem de Java, esse vídeo vai explicar os conceitos fundamentais da linguagem...",
     imagem: "./img/rocketseat.png",
     textoOrigem: "Canal Rocketseat",
@@ -49,12 +49,13 @@ for (let i = 0; i < arrayPostagens.length; i++){
 const div = document.createElement("div")
 div.id=`post-${[i + 1]}`
 
-
 // populando o elemento
 div.innerHTML =
-`<h3><p>${arrayPostagens[i].textoMateria}</p>${arrayPostagens[i].tituloMateria}</h3>
-<a href="${arrayPostagens[i].link}" target="_blank"><img height="150px" width="650px" src="${arrayPostagens[i].imagem}">
-<p>${arrayPostagens[i].textoOrigem}</p>`
+`<span><h3><p>${arrayPostagens[i].textoMateria}
+</p>${arrayPostagens[i].tituloMateria}</h3></span>
+<span><img height="90px" width="auto" src="${arrayPostagens[i].imagem}">
+<p>${arrayPostagens[i].textoOrigem}</p><a class="saibaMais"
+href=${arrayPostagens[i].link}" target="_blank">Saiba mais</a></span>`
 
 
 // adicionando ao DOM

@@ -33,8 +33,13 @@
 
     <h2>Fique por dentro das últimas notícias do mundo da programação!</h2>
 
-    <h4>Calendário</h4>
-
+    <div>
+    <span>
+      <div class="navigation-buttons">
+        <button onclick="mudarMes(-1)">Mês anterior</button>
+        <h4 id="mesAtual"></h4>
+        <button onclick="mudarMes(1)">Próximo mês</button>
+      </div>
     <table id="calendar">
       <thead>
         <tr>
@@ -51,6 +56,11 @@
 
       </tbody>
     </table>
+  </span>
+  <span>
+    Para encontrar notícias de um dia específico utilize o calendário ao lado!
+  </span>
+  </div>
 
     <section>
 

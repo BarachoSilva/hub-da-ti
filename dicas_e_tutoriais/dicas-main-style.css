@@ -1,14 +1,8 @@
-* {
+main {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #2b2d42;
+  background-color:  #4d4f6d;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f4f3ee;
-}
-
-main {
-  background-color: #4d4f6d;
 }
 
 h2 {
@@ -16,14 +10,6 @@ h2 {
   padding: 12px;
   margin-bottom: 40px;
   background-color: #4d4f6d;
-}
-
-h3 {
-  margin: 60px 60px 24px 60px;
-}
-
-h4 {
-  margin: 24px;
 }
 
 .imagemdicas {
@@ -37,7 +23,8 @@ h4 {
 
 section {
   background-color: #4d4f6d;
-  margin-bottom: 12px;
+  display: flow-root;
+  width: auto;
 }
 
 div {
@@ -47,10 +34,10 @@ div {
   background-color: #2b2d42;
   margin: 12px 30px 30px 12px;
   border-radius: 16px;
+  width: auto;
 }
 
 div p {
-  margin-bottom: 20px;
   padding: 20px;
 }
 
@@ -61,4 +48,15 @@ div h3 {
 
 div a {
   padding: 20px;
+}
+
+.saibaMais {
+  display: inline-block;
+  background-color: #4d4f6d;
+  color: #f4f3ee;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
