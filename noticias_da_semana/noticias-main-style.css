@@ -1,10 +1,10 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #2b2d42;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f4f3ee;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2b2d42;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f4f3ee;
 }
 
 main {
@@ -50,6 +50,10 @@ td {
   cursor: pointer;
 }
 
+td:hover {
+  background-color: black;
+}
+
 .current-day {
   background-color: #4d5f6d;
   color: white;
@@ -60,8 +64,17 @@ td {
   background-color: #4d4f6d;
 }
 
+main div span {
+    text-align: center;
+    padding: 20px;
+}
+
 section {
   background-color: #4d4f6d;
+  margin: auto auto auto auto;
+  display: flex;
+  justify-content: space-around;
+  weight: auto;
 }
 
 div {
