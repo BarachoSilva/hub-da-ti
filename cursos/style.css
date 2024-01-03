@@ -134,22 +134,15 @@ section {
     height: 100%;
   }
 
-  .ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 4px;
+  .menu-btn {
+    order: 0; 
   }
 
   .nav {
-    top: 140px;
-    padding: 15px;
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-
-  .cadastro-section {
-    margin: 50px;
-    padding: 0px;
-    margin-top: -50px;
-    margin-bottom: 0px;
+    display: flex;
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
   }

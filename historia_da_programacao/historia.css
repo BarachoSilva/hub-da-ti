@@ -1,3 +1,4 @@
+
 main {
   background-color: #4d4f6d;
   padding: 10px;
@@ -66,9 +67,7 @@ section {
   
   nav a:hover {
     color: blue;
-  }
-  
-  h1 {
+h1 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 200;
