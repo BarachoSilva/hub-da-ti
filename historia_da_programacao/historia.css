@@ -1,72 +1,95 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #2b2d42;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f4f3ee;
+
+main {
+  background-color: #4d4f6d;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
-
-
-.section {
-    width: 60vw;
-    height: 40vh;
-    margin: auto;
+section {
+    width: 95vw;
+    height: auto;
+    margin: 20px 0px 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+  }
 
-.img {
-    width: 100%;
-    object-fit: cover;
-    width: 14vw;
-    height: 32vh;
-    padding: 3.7px;
-}
+  .link {
+    display: inline-block;
+    background-color: #4d4f6d;
+    color: #f4f3ee;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 70vw;
+    transition: background-color 0.3s ease;
+  }
 
-.div {
-    width: 70%;
-    height: 30vh;
+  .img {
+  width: 100%;
+  object-fit: cover;
+  width: 14vw;
+  height: 32vh;
+  padding: 3.7px;
+}
+  
+  .div {
+    width: 100%; 
+    height: auto; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     order: 1;
-}
-
-.titulo {
+  }
+  
+  .titulo {
     font-size: 1.5em;
     font-weight: 400;
-}
-
-.p {
-    font-size-adjust: initial;
-    font-weight: 400;
+  }
+  
+  .p {
+    margin: 10px; 
+    padding: 10px;
     text-align: center;
-}
-
-ul li {
+  }
+  
+  ul li {
     text-align: center;
     padding: 12px;
     text-decoration: none;
     justify-content: space-around;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     color: blue;
-}
-
-a {
-    text-decoration: none;
-    color: #f4f3ee;
-}
-
 h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 200;
-  padding: 12px;
-}
-
-
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding: 10px;
+    background-color: #4d4f6d;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    section {
+      margin: 10px 0px; /
+    }
+  
+    .link {
+      margin-right: 0;
+      padding: 8px 16px;
+      margin-right: 70vw;
+    }
+    .img {
+        width: 100%;
+        object-fit: cover;
+        width: 50vw;
+        height: 32vh;
+        padding: 3.7px;
+      }
+  }

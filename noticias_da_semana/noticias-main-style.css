@@ -82,11 +82,11 @@ section {
 }
 
 div {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   padding: 16px;
   background-color: #2b2d42;
-  margin: 12px 30px 30px 12px;
+  margin: 12px 15px 30px 12px;
   border-radius: 16px;
 }
 
@@ -130,4 +130,38 @@ div h3 {
 
 .navigation-buttons button:hover {
   background-color: #2b2d42;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #2b2d42;
+  }
+
+  .ul {
+    flex-direction: column;
+  }
+
+  .li {
+    margin: 10px 0;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  main {
+    padding: 10px;
+  }
 }

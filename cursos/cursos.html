@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css"/>
+    <script src="../styles/header_script.js" defer></script>
+    <script src=".script.js"></script>
     <title>Cursos</title>
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header class="header">
         <a href="../index.html"><img class="logo" src="./img/hub.png" alt="Logotipo do Blog"></a>
-        <button id="menuBtn" class="menu-btn">&#9776; MENU</button>
-        <nav class="nav">
+        <button id="menuBtn" class="menu-btn" onclick="clickMenu()">&#9776;</button>
+        <nav id="menu" class="nav">
             <ul class="ul">
                 <li>
                     <a href="../noticias_da_semana/noticias_da_semana.html">NOTÍCIAS DA SEMANA</a>
@@ -32,7 +36,6 @@
             </ul>
         </nav>
     </header>
-    
     <main class="main">
         <h1>CURSOS</h1>
             <section>
@@ -52,10 +55,10 @@
                     <a class="linkCurso" href="https://www.cursoemvideo.com/curso/curso-de-algoritmo/" target="_blank">
                         LINK PARA O CURSO</a>
                 </li>
-                 </div>
+                </div>
             </section>
             <section>
-                 <div class="curso2">
+                <div class="curso2">
                 <li>
                     <h2>Git e Github</h2>
                     <img class="logocursos" height="200px" width="200px" 
@@ -101,6 +104,21 @@ Curso completo para quem quer aprender a criar sites utilizando as tecnologias d
                 </div>
             </ul>
         </section>
+        <div class="cadastro-section">
+            <form class="cadastro-form">
+                <h2>Cadastro</h2>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>Todos os direitos reservados <span>&#169;</span> 2023 Blog da TI</p>

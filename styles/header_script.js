@@ -1,8 +1,8 @@
 function clickMenu() {
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
+    var nav = document.querySelector('.nav');
+    if (nav.style.display === 'block' || nav.style.display === '') {
+        nav.style.display = 'none';
     } else {
-        menu.style.display = 'block';
+        nav.style.display = 'block';
     }
-    
 }
