@@ -20,6 +20,10 @@
   width: 140px;
   height: 140px;
 }
+
+#menuBtn {
+  display: none;
+}
 .nav {
   width: 90%;
   display: flex;
@@ -44,6 +48,20 @@ a:hover {
   .header {
     height: 100%;
     flex-direction: column;
+  }
+  #menuBtn {
+    display: block;
+    width: 20vw;
+    font-size: 30px;
+
+    border: none;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
   }
   .ul {
     flex-direction: column;

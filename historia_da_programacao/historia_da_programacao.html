@@ -1,109 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="historia.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/header-style.css" />
+    <link rel="stylesheet" href="historia.css" />
+    <link rel="stylesheet" href="../styles/footer-style.css" />
+    <script src="../styles/header_script.js" defer></script>
     <title>História da Programação</title>
-</head>
+  </head>
   <body>
     <header class="header">
-      <a href="../index.html"> <img class="logo" src="./img/hub.png" alt="Logotipo do Blog" /></a>
-      <nav class="nav">
-      <ul class="ul">
-        <li class="li"><a href="../noticias_da_semana/noticias_da_semana.html">Notícias da Semana</a></li>      
-        <li><a href="../dicas_e_tutoriais/dicas_e_tutoriais.html">Dicas e Tutoriais</a></li>    
-        <li><a href="../cursos/cursos.html">Cursos</a></li>
-        <li><a href="../historia_da_programacao/historia_da_programacao.html">História da Programação</a></li>
-        <li><a href="../sobre_quem_somos/quem_somos.html">Quem Somos</a></li>
-       </ul>
+      <a href="../index.html">
+        <img class="logo" src="./img/hub.png" alt="Logotipo do Blog"
+      /></a>
+      <button id="menuBtn" class="menu-btn" onclick="clickMenu()">
+        &#9776;
+      </button>
+      <nav id="menu" class="nav">
+        <ul class="ul">
+          <li class="li">
+            <a href="../noticias_da_semana/noticias_da_semana.html"
+              >Notícias da Semana</a
+            >
+          </li>
+          <li>
+            <a href="../dicas_e_tutoriais/dicas_e_tutoriais.html"
+              >Dicas e Tutoriais</a
+            >
+          </li>
+          <li><a href="../cursos/cursos.html">Cursos</a></li>
+          <li>
+            <a href="../historia_da_programacao/historia_da_programacao.html"
+              >História da Programação</a
+            >
+          </li>
+          <li><a href="../sobre_quem_somos/quem_somos.html">Quem Somos</a></li>
+        </ul>
       </nav>
-    </header>     
+    </header>
+    <main class="main">
+      <h1>Pequena história da programação</h1>
+      <section class="section">
+        <img
+          class="img"
+          src="./img/ada.webp"
+          alt="foto de Ada Lovelace"
+          width="200px"
+          height="200px"
+        />
 
-        <h1>Pequena história da programação</h1>       
+        <div class="div">
+          <p class="titulo">Ada Lovelace</p>
+          <p>
+            Nos anos de 1800, existia uma mulher extraordinária chamada Ada
+            Lovelace, conhecida como a rainha da matemática. Ela se tornou a
+            primeira programadora da história ao colaborar com Charles Babbage,
+            o inventor da "Máquina Analítica". Juntos, eles conceberam ideias
+            revolucionárias e desenvolveram algoritmos que poderiam ser
+            executados nessa máquina. Ada Lovelace deu início à era da
+            programação, provando que as mulheres também são talentosas e
+            influentes no mundo da tecnologia.
+          </p>
+          <a class="link" href="https://www.google.com/search?q=Ada+Lovelace" target="_blank"
+            >Clique aqui para saber mais</a
+          >
+        </div>
+      </section>
 
-        <section class="section">
-          <Img class="img" src="./img/ada.webp" alt="foto de Ada Lovelace" width="200px" height="200px"/>
-          
-          <div class="div">
-            <p class="titulo">Ada Lovelace</p>
-            <p>
-              Nos anos de 1800, existia uma mulher extraordinária chamada Ada Lovelace, conhecida como a rainha da matemática. 
-              Ela se tornou a primeira programadora da história ao colaborar com Charles Babbage, o inventor da "Máquina Analítica".
-              Juntos, eles conceberam ideias revolucionárias e desenvolveram algoritmos que poderiam ser executados nessa máquina.
-              Ada Lovelace deu início à era da programação, provando que as mulheres também são talentosas e influentes no mundo da 
-              tecnologia.
-            </p>
-            <a href="https://www.google.com/search?q=Ada+Lovelace" target="_blank">Clique aqui para saber mais</a>
-          </div>
-        </section>
-  
-        <section class="section">
-          <Img class="img" src="./img/html.webp" alt="imagem da tela de um computador com codigos html" width="200px" height="200px"/>
-          <div class="div">
-            <p class="titulo">HTML</p>
-            <p>
-              O HTML (HyperText Markup Language) foi criado no início dos anos 90 por Tim Berners-Lee e Robert Cailliau. Eles desenvolveram
-              essa linguagem para estruturar e organizar o conteúdo das páginas da web, permitindo a criação de títulos, parágrafos e outros
-              elementos usando tags como < h1> e < p>. O HTML é considerado a base fundamental do design visual das páginas na internet e ainda 
-              é amplamente utilizado hoje em dia. Essa inovação revolucionou a forma como as informações são apresentadas na web, sendo essencial
-              para a criação de sites modernos.
-            </p>
-            <a href="https://www.google.com/search?q=historia+do+html" target="_blank">Clique aqui para saber mais</a>
-          </div>    
-        </section>
-  
-        <section class="section">
-          <Img class="img" src="./img/javascript.avif" alt="imagem da tela de um computador com codigos javascript" width="200px" height="200px"/>
-          <div class="div">
-            <p class="titulo">JavaScript</p>
-            <p>
-              No auge do crescimento da web, Brendan Eich e uma equipe de engenheiros da Netscape Communications Corporation criaram o JavaScript em 1995.
-              Essa linguagem revolucionou a interatividade online, permitindo que as páginas ganhassem vida com elementos que se movem e interagem diretamente
-              no navegador. Desde então, praticamente todos os sites utilizam o poder do JavaScript para oferecer recursos incríveis, elevando a experiência 
-              online a um novo patamar. A visão e trabalho desses desenvolvedores transformaram a forma como as páginas da web podem ser interativas e dinâmicas.
-            </p>
-            <a href="https://www.google.com/search?q=historia+do+javascript" target="_blank">Clique aqui para saber mais</a>
-          </div>
-        </section>
-  
-        <section class="section">
-          <Img class="img" src="./img/css.jpeg" alt="imagem css" width="200px" height="200px"/>
-          <div class="div">
-            <p class="titulo">CSS</p>
-            <p>
-             Quando a web ainda era um pouco monótona, o CSS entrou em cena para adicionar estilo e tornar as páginas web mais atraentes. Foi uma verdadeira 
-             revolução fashion na internet! Com o CSS, foi possível transformar completamente o visual das páginas, adicionando cores, ajustando layouts e 
-             deixando tudo mais apresentável. O CSS é como um estilista para as páginas web, trazendo um visual descolado que todos adoram. Graças ao CSS, 
-             a web se tornou mais estilosa e organizada.
-            </p>
-            <a href="https://www.google.com/search?q=historia+do+css" target="_blank">Clique aqui para saber mais</a>
-          </div>
-        </section>
-  
-        <section class="section">
-          <Img class="img" src="./img/python.jpeg" alt="imagem da tela de um computador com phython escrito" width="200px" height="200px"/>
-          <div class="div">
-            <p class="titulo">Python</p>
-            <p>
-              No início dos anos 2000, Python surgiu como uma linguagem de programação amigável e descontraída, tornando-se um verdadeiro herói 
-              para os desenvolvedores. Com sua simplicidade e versatilidade, Python é amplamente utilizado para uma variedade de aplicações, desde 
-              o desenvolvimento de sites até a criação de sistemas de inteligência artificial. É como um canivete suíço da programação, capaz de
-              fazer de tudo e com uma abordagem tranquila e descomplicada. Python é o amigo que está sempre pronto para te ajudar em qualquer projeto.
-            </p>
-            <a href="https://www.google.com/search?q=historia+do+python" target="_blank">Clique aqui para saber mais</a>
-          </div>
-        </section>
-        
-        <p class="p">E assim, com muito código e café, essas linguagens continuam a festa digital, criando o futuro do código de uma maneira
-            descolada!</p>    
-        
-        <footer>
-          <p>Todos os direitos reservados <span>&#169;</span> 2023 Blog da TI</p>
-          <p>Veja o repósitório da página:</p>
-          <a href="https://github.com/BarachoSilva/codigo-e-cafe" target="_blank">Repositório</a>
-          <p>Clique abaixo e conheça a Proz Educação</p>
-          <a href="https://prozeducacao.com.br/" target="_blank">Proz Educação</a>
-        </footer>
+      <section class="section">
+        <img
+          class="img"
+          src="./img/html.webp"
+          alt="imagem da tela de um computador com codigos html"
+          width="200px"
+          height="200px"
+        />
+        <div class="div">
+          <p class="titulo">HTML</p>
+          <p>
+            O HTML (HyperText Markup Language) foi criado no início dos anos 90
+            por Tim Berners-Lee e Robert Cailliau. Eles desenvolveram essa
+            linguagem para estruturar e organizar o conteúdo das páginas da web,
+            permitindo a criação de títulos, parágrafos e outros elementos
+            usando tags como < h1> e < p>. O HTML é considerado a base
+            fundamental do design visual das páginas na internet e ainda é
+            amplamente utilizado hoje em dia. Essa inovação revolucionou a forma
+            como as informações são apresentadas na web, sendo essencial para a
+            criação de sites modernos.
+          </p>
+          <a class="link"
+            href="https://www.google.com/search?q=historia+do+html"
+            target="_blank"
+            >Clique aqui para saber mais</a
+          >
+        </div>
+      </section>
+
+      <section class="section">
+        <img
+          class="img"
+          src="./img/javascript.avif"
+          alt="imagem da tela de um computador com codigos javascript"
+          width="200px"
+          height="200px"
+        />
+        <div class="div">
+          <p class="titulo">JavaScript</p>
+          <p>
+            No auge do crescimento da web, Brendan Eich e uma equipe de
+            engenheiros da Netscape Communications Corporation criaram o
+            JavaScript em 1995. Essa linguagem revolucionou a interatividade
+            online, permitindo que as páginas ganhassem vida com elementos que
+            se movem e interagem diretamente no navegador. Desde então,
+            praticamente todos os sites utilizam o poder do JavaScript para
+            oferecer recursos incríveis, elevando a experiência online a um novo
+            patamar. A visão e trabalho desses desenvolvedores transformaram a
+            forma como as páginas da web podem ser interativas e dinâmicas.
+          </p>
+          <a class="link"
+            href="https://www.google.com/search?q=historia+do+javascript"
+            target="_blank"
+            >Clique aqui para saber mais</a
+          >
+        </div>
+      </section>
+
+      <section class="section">
+        <img
+          class="img"
+          src="./img/css.jpeg"
+          alt="imagem css"
+          width="200px"
+          height="200px"
+        />
+        <div class="div">
+          <p class="titulo">CSS</p>
+          <p>
+            Quando a web ainda era um pouco monótona, o CSS entrou em cena para
+            adicionar estilo e tornar as páginas web mais atraentes. Foi uma
+            verdadeira revolução fashion na internet! Com o CSS, foi possível
+            transformar completamente o visual das páginas, adicionando cores,
+            ajustando layouts e deixando tudo mais apresentável. O CSS é como um
+            estilista para as páginas web, trazendo um visual descolado que
+            todos adoram. Graças ao CSS, a web se tornou mais estilosa e
+            organizada.
+          </p>
+          <a class="link"
+            href="https://www.google.com/search?q=historia+do+css"
+            target="_blank"
+            >Clique aqui para saber mais</a
+          >
+        </div>
+      </section>
+
+      <section class="section">
+        <img
+          class="img"
+          src="./img/python.jpeg"
+          alt="imagem da tela de um computador com phython escrito"
+          width="200px"
+          height="200px"
+        />
+        <div class="div">
+          <p class="titulo">Python</p>
+          <p>
+            No início dos anos 2000, Python surgiu como uma linguagem de
+            programação amigável e descontraída, tornando-se um verdadeiro herói
+            para os desenvolvedores. Com sua simplicidade e versatilidade,
+            Python é amplamente utilizado para uma variedade de aplicações,
+            desde o desenvolvimento de sites até a criação de sistemas de
+            inteligência artificial. É como um canivete suíço da programação,
+            capaz de fazer de tudo e com uma abordagem tranquila e
+            descomplicada. Python é o amigo que está sempre pronto para te
+            ajudar em qualquer projeto.
+          </p>
+          <a class="link"
+            href="https://www.google.com/search?q=historia+do+python"
+            target="_blank"
+            >Clique aqui para saber mais</a
+          >
+        </div>
+      </section>
+
+      <p class="p">
+        E assim, com muito código e café, essas linguagens continuam a festa
+        digital, criando o futuro do código de uma maneira descolada!
+      </p>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados <span>&#169;</span> 2024 Blog da TI</p>
+      <p>Conheça a Proz Educação</p>
+      <a href="https://prozeducacao.com.br/" target="_blank"
+        ><img
+          src="../sobre_quem_somos/assets/icons/proz_logo.png"
+          alt="Logo da Proz Educação"
+      /></a>
+      <p>Visite o repositório do blog</p>
+
+      <a href="https://github.com/BarachoSilva/codigo-e-cafe" target="_blank"
+        ><img
+          class="redesFooter"
+          src="../sobre_quem_somos/assets/icons/github.png"
+          alt="Ícone do repositório do blog no GitHub."
+      /></a>
+    </footer>
   </body>
 </html>
