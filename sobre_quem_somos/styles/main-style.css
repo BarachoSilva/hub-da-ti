@@ -109,7 +109,7 @@ textarea {
   padding: 1rem 0.75rem;
   border-radius: 10px;
 }
-button {
+.btnForm {
   width: 40vw;
   margin-top: 15px;
   padding: 1rem 3rem;
@@ -120,7 +120,7 @@ button {
   cursor: pointer;
   border-radius: 50px;
 }
-button:hover {
+.btnForm:hover {
   opacity: 0.5;
   transition: 0.3s;
 }
@@ -128,4 +128,33 @@ button:hover {
   width: 98vw;
   height: 10vh;
   background-color: #4d4f6d;
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-weight: 150;
+    font-size: 22px;
+  }
+  .section {
+    height: 55vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .profile {
+    width: 50vw;
+    height: 25vh;
+    margin: 4px;
+  }
+  .div {
+    width: 85%;
+    height: 40vh;
+    
+  }
+
+  .form {
+    height: 55vh;
+  }
+
+  .final {
+    height: 5vh;
+  }
 }

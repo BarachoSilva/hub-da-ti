@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias da semana</title>
-    <link rel="stylesheet" href="../header-style.css">
+    
+    <link rel="stylesheet" href="../styles/header-style.css" />
     <link rel="stylesheet" href="noticias-main-style.css">
-    <link rel="stylesheet" href="../footer-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
     <script src="noticias-script.js" defer></script>
+    <script src="../styles/header_script.js" defer></script>
+    <title>Notícias da semana</title>
 </head>
 
 <body>
 
   <header class="header">
     <a href="../index.html"> <img class="logo" src="./img/hub.png" alt="Logotipo do Blog" /></a>
-    <nav class="nav">
+    <button id="menuBtn" class="menu-btn" onclick="clickMenu()">&#9776;</button>
+    <nav id="menu" class="nav">
       <ul class="ul">
         <li class="li"> <a href="./noticias_da_semana.html">Notícias da Semana</a></li>
         <li><a href="../dicas_e_tutoriais/dicas_e_tutoriais.html">Dicas e Tutoriais</a></li>
@@ -58,7 +61,7 @@
     </table>
   </span>
   <span>
-    Para encontrar notícias de um dia específico utilize o calendário ao lado!
+    <h4>Para encontrar notícias de um dia específico utilize o calendário a cima!</h4>
   </span>
   </div>
 
@@ -68,13 +71,16 @@
 
   </main>
 
-    <footer>
-      <p>Todos os direitos reservados <span>&#169;</span> 2023 Blog da TI</p>
-      <p>Veja o repósitório da página:</p>
-      <a href="https://github.com/BarachoSilva/codigo-e-cafe" target="_blank">Repositório</a>
-      <p>Clique abaixo e conheça a Proz Educação</p>
-      <a href="https://prozeducacao.com.br/" target="_blank">Proz Educação</a>
-    </footer>
-
+  <footer>
+    <p>Todos os direitos reservados <span>&#169;</span> 2024 Blog da TI</p>
+    <p>Conheça a Proz Educação</p>
+    <a href="https://prozeducacao.com.br/" target="_blank"><img src="../sobre_quem_somos/assets/icons/proz_logo.png" alt="Logo da Proz Educação"></a>
+    <p>Visite o repositório do blog</p>
+    
+    <a href="https://github.com/BarachoSilva/codigo-e-cafe" target="_blank"><img class="redesFooter" src="../sobre_quem_somos/assets/icons/github.png" alt="Ícone do repositório do blog no GitHub."></a>
+    
+   
+  </footer>
 </body>
 </html>
+
