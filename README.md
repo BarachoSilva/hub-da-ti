@@ -1,12 +1,5 @@
 # Projeto Hub da TI
 
-<style>
-* {
-    background-color: #2b2d42;
-    color: "white";
-}
-</style>
-
 <img height="300px" width="300px" src="./img_home/hub.png" alt="Logotipo do Blog"/>
 
 Grupo B - Turma 17 - ProzEducação2023
