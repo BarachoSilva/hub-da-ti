@@ -20,7 +20,7 @@ const arrayPostagens = {
         tituloMateria: "Código aberto falhou completamente em atender pessoas comuns - diz cofundador do movimento Open Source",
         textoMateria: "Para os familiarizados com o movimento Open Source, Bruce Perens dispensa apresentações. Um dos fundadores da iniciativa junto a Eric Raymond   ...",
         imagem: "https://cdn.tecmasters.com.br/wp-content/uploads/2024/01/shutterstock_2171440301The7Dew.jpg",
-        textoOrigem: "TECMASTERS  - 02/01/2024",
+        textoOrigem: "TECMASTERS  - 03/01/2024",
         link: "https://www.tecmasters.com.br/codigo-aberto-falhou-pessoas-comuns-open-source/",
         diaPostagem: "3"
       },
