@@ -9,14 +9,31 @@ const arrayPostagens = {
         diaPostagem: "1"
       },
       {
-        tituloMateria: "Conheça as habilidades essenciais para os analistas",
+        tituloMateria: "Conheça as habilidades essenciais para os analistas de ameaça",
         textoMateria: "Conhecimento em diferentes linguagens e ferramentas de programação, aprendizado de máquina e inteligência artificial são algumas das habilidades técnicas  ...",
         imagem: "https://www.csoonline.com/wp-content/uploads/2024/01/insider-threat-shadow-worker-laptop.jpg?resize=1024%2C684&quality=50&strip=all",
         textoOrigem: "CSO  - 02/01/2024",
         link: "https://www.csoonline.com/article/1270134/bolster-your-teams-cyber-defense-essential-skills-for-todays-threat-analysts.html",
         diaPostagem: "2"
       },
+      {
+        tituloMateria: "Código aberto falhou completamente em atender pessoas comuns - diz cofundador do movimento Open Source",
+        textoMateria: "Para os familiarizados com o movimento Open Source, Bruce Perens dispensa apresentações. Um dos fundadores da iniciativa junto a Eric Raymond   ...",
+        imagem: "https://cdn.tecmasters.com.br/wp-content/uploads/2024/01/shutterstock_2171440301The7Dew.jpg",
+        textoOrigem: "TECMASTERS  - 02/01/2024",
+        link: "https://www.tecmasters.com.br/codigo-aberto-falhou-pessoas-comuns-open-source/",
+        diaPostagem: "3"
+      },
+      {
+        tituloMateria: "Quão rápida é a sua linguagem de programação? Novo concurso e benchmarks geram debate",
+        textoMateria: "Os programadores Java estão sendo pressionados a publicar a solução mais rápida possível para um “desafio de um bilhão de linhas”, gerando soluções  ...",
+        imagem: "https://devclass.com/wp-content/uploads/2024/01/speed_shutterstock-768x512.jpg",
+        textoOrigem: "DEVCLASS  - 04/01/2024",
+        link: "https://www.devclass.com/2024/01/04/how-fast-is-your-programming-language-new-contest-and-benchmarks-spark-debate/",
+        diaPostagem: "4"
+      },
     ],
+
     "12": [
       {
         tituloMateria: "Suprema Corte britânica decide que IA não pode ser “inventora” de patentes",
@@ -143,9 +160,10 @@ function atualizarConteudo() {
     for (let i = 0; i < arrayPostagens[mesAtual.toString()].length; i++) {
         const div = document.createElement("div");
         div.id = `post-${[i + 1]}`;
-
+        
         div.innerHTML = `<h3>${arrayPostagens[mesAtual.toString()][i].tituloMateria}
-            <p>${arrayPostagens[mesAtual.toString()][i].textoMateria}</p><a class="saibaMais" href=${arrayPostagens[mesAtual.toString()][i].link} target="_blank">Saiba mais</a></h3>
+            <p>${arrayPostagens[mesAtual.toString()][i].textoMateria}</p><a class="saibaMais" 
+            href=${arrayPostagens[mesAtual.toString()][i].link} target="_blank">Saiba mais</a></h3>
             <p><img height="200px" width="250px" src="${arrayPostagens[mesAtual.toString()][i].imagem}">
             ${arrayPostagens[mesAtual.toString()][i].textoOrigem}</p>`;
 

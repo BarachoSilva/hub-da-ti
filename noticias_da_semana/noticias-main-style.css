@@ -20,6 +20,7 @@ h2 {
 h4 {
   text-align: center;
   padding: 12px;
+  line-height: 1.5em;
 }
 
 .imagemnoticias {
@@ -77,12 +78,12 @@ section {
   background-color: #4d4f6d;
   margin: auto auto auto auto;
   display: flow-root;
-  justify-content: space-around;
+  justify-content: center;
   weight: auto;
 }
 
 div {
-  display: grid;
+  display: flex;
   justify-content: space-between;
   padding: 16px;
   background-color: #2b2d42;
@@ -130,4 +131,15 @@ div h3 {
 
 .navigation-buttons button:hover {
   background-color: #2b2d42;
+}
+
+@media screen and (max-width: 768px) {
+  div {
+    display: block;
+    justify-content: center;
+    padding: 16px;
+    background-color: #2b2d42;
+    margin: 12px 15px 30px 12px;
+    border-radius: 16px;
+  }
 }
