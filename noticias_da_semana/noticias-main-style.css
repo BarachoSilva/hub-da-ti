@@ -1,10 +1,10 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #2b2d42;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f4f3ee;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2b2d42;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f4f3ee;
 }
 
 main {
@@ -14,8 +14,12 @@ main {
 h2 {
   text-align: center;
   padding: 12px;
-  margin-bottom: 40px;
   background-color: #4d4f6d;
+}
+
+h4 {
+  text-align: center;
+  padding: 12px;
 }
 
 .imagemnoticias {
@@ -50,6 +54,10 @@ td {
   cursor: pointer;
 }
 
+td:hover {
+  background-color: black;
+}
+
 .current-day {
   background-color: #4d5f6d;
   color: white;
@@ -60,16 +68,25 @@ td {
   background-color: #4d4f6d;
 }
 
+main div span {
+  text-align: center;
+  padding: 20px;
+}
+
 section {
   background-color: #4d4f6d;
+  margin: auto auto auto auto;
+  display: flow-root;
+  justify-content: space-around;
+  weight: auto;
 }
 
 div {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-content: space-between;
   padding: 16px;
   background-color: #2b2d42;
-  margin: 12px 30px 30px 12px;
+  margin: 12px 15px 30px 12px;
   border-radius: 16px;
 }
 
