@@ -125,3 +125,13 @@ section {
   border: 2px solid green;
   background-color: #e6ffe6;
 }
+
+@media only screen and (max-width: 1024px) {
+
+  .cadastro-section {
+    margin: 50px;
+    padding: 0px;
+    margin-top: -50px;
+    margin-bottom: 0px;
+  }
+}

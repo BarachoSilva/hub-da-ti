@@ -141,5 +141,21 @@ div h3 {
     background-color: #2b2d42;
     margin: 12px 15px 30px 12px;
     border-radius: 16px;
+    font-size: 10px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  div h3 {
+    padding: 40px;
+    font-size: medium;
+    line-height: 1.5em;
+    margin-left: 40px;
+    font-size: 12px;
   }
 }
