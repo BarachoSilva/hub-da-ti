@@ -59,3 +59,22 @@ div h3 {
   margin-top: 10px;
   transition: background-color 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+  div {
+    flex: 0 0 calc(33.333% - 24px);
+    display: block;
+    justify-content: space-around;
+    padding: 16px;
+    background-color: #2b2d42;
+    margin: 12px 0;
+    border-radius: 16px;
+    font-size: 10px;
+  }
+  div h3 {
+    line-height: 1.5em;
+    font-size: medium;
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+}
