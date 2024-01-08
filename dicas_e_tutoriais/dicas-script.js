@@ -1,3 +1,4 @@
+// declarar a arrayPostagens
 const arrayPostagens = [
   {
     textoMateria: "Quer aprender a fazer seu primeiro site usando apenas HTML e CSS",
@@ -44,25 +45,23 @@ const arrayPostagens = [
 ]
 
 for (let i = 0; i < arrayPostagens.length; i++) {
-    // criando o elemento
+    // crir o elemento
     const div = document.createElement("div");
     div.id = `post-${[i + 1]}`;
 
-    // populando o elemento
+    // popular o elemento
     div.innerHTML =
         `<span>
-            <h3>
-                <p>${arrayPostagens[i].textoMateria}</p>
-                ${arrayPostagens[i].tituloMateria}
-            </h3>
+            <h3><p>${arrayPostagens[i].textoMateria}</p>
+            ${arrayPostagens[i].tituloMateria}</h3>
         </span>
         <span>
-            <img height="80px" width="auto" src="${arrayPostagens[i].imagem}">
+            <img height="75px" width="auto" src="${arrayPostagens[i].imagem}">
             <p>${arrayPostagens[i].textoOrigem}</p>
             <a class="saibaMais" href="${arrayPostagens[i].link}" target="_blank">Saiba mais</a>
         </span>`;
 
-    // adicionando ao DOM
+    // adicionar ao DOM
     const section = document.querySelector('section');
     section.appendChild(div);
 }
