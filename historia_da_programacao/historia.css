@@ -9,6 +9,7 @@
 
 main {
   background-color: #4d4f6d;
+  padding: 20px;
 }
 
 h1 {
@@ -17,6 +18,13 @@ h1 {
   font-weight: 200;
   padding: 10px;
   background-color: #4d4f6d;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+img {
+    max-width: auto;
+    height: auto;
 }
 
 h3 {
@@ -56,9 +64,50 @@ div a {
 .divfim{
   height: 60px;
   background-color: #4d4f6d;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .redes {
   width: 25px;
   height: 25px;
 }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    margin: 20px;
+  }
+  
+  div {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  div h3 {
+    font-size: 18px;
+  }
+  
+  .divfim {
+    font-size: 12px;
+  }
+  
+  .redes {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  img {
+    max-width: 80%; 
+    height: auto;
+  }
+}
+
