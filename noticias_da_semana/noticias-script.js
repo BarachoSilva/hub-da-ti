@@ -1,3 +1,4 @@
+// declarar a arrayPostagens
 const arrayPostagens = {
     "1": [
       {
@@ -33,7 +34,6 @@ const arrayPostagens = {
         diaPostagem: "4"
       },
     ],
-
     "12": [
       {
         tituloMateria: "Suprema Corte britânica decide que IA não pode ser “inventora” de patentes",
@@ -92,10 +92,10 @@ const arrayPostagens = {
         diaPostagem: "1"
       },
     ],
-    // adicionar outros meses conforme necessário
+    // espaço para adicionar outros meses
 };
 
-let mesAtual = new Date().getMonth() + 1; // Mês atual
+let mesAtual = new Date().getMonth() + 1;
 let anoAtual = new Date().getFullYear();
 
 function criarCalendario() {
@@ -103,12 +103,10 @@ function criarCalendario() {
     let hoje = new Date();
     let diasDoMes = new Date(anoAtual, mesAtual, 0).getDate();
     let primeiroDiaDoMes = new Date(anoAtual, mesAtual - 1, 1).getDay();
-
     let contadorDia = 1;
 
-    // Definir o corpo da tabela
+    // definir o corpo da tabela
     corpoTabela.innerHTML = '';
-
     for (let i = 0; i < 6; i++) {
         let linhas = corpoTabela.insertRow(i);
 
@@ -129,7 +127,6 @@ function criarCalendario() {
             }
             celula.innerHTML = contadorDia;
             if (anoAtual === hoje.getFullYear() && mesAtual === hoje.getMonth() + 1 && contadorDia === hoje.getDate()) {
-                // Destacar o dia atual
                 celula.classList.add('current-day');
             }
             contadorDia++;
@@ -138,7 +135,7 @@ function criarCalendario() {
     adicionarEventoDestaque();
 }
 
-// Definir evento de acesso à postagem
+// definir evento de destaque
 function adicionarEventoDestaque() {
     let cells = document.getElementsByTagName('td');
     for (let i = 0; i < cells.length; i++) {
@@ -146,23 +143,26 @@ function adicionarEventoDestaque() {
             let date = this.textContent;
             let targetPost = arrayPostagens[mesAtual.toString()].find(post => post.diaPostagem === date);
             if (targetPost) {
-                window.location.href = targetPost.link;
+              window.open(
+                targetPost.link,
+                '_blank'
+              );
             }
         });
     }
 }
 
-// Atualizar o conteúdo da página com base no mês atual
+// atualizar o conteúdo da página com o mês atual
 function atualizarConteudo() {
     const section = document.querySelector('section');
-    section.innerHTML = ''; // Limpar o conteúdo existente
+    section.innerHTML = '';
 
     for (let i = 0; i < arrayPostagens[mesAtual.toString()].length; i++) {
         const div = document.createElement("div");
         div.id = `post-${[i + 1]}`;
-        
+
         div.innerHTML = `<h3>${arrayPostagens[mesAtual.toString()][i].tituloMateria}
-            <p>${arrayPostagens[mesAtual.toString()][i].textoMateria}</p><a class="saibaMais" 
+            <p>${arrayPostagens[mesAtual.toString()][i].textoMateria}</p><a class="saibaMais"
             href=${arrayPostagens[mesAtual.toString()][i].link} target="_blank">Saiba mais</a></h3>
             <p><img height="200px" width="250px" src="${arrayPostagens[mesAtual.toString()][i].imagem}">
             ${arrayPostagens[mesAtual.toString()][i].textoOrigem}</p>`;
@@ -171,7 +171,7 @@ function atualizarConteudo() {
     }
 }
 
-// Mudar o mês e atualizar o conteúdo
+// mudar o mês e atualizar o conteúdo
 function mudarMes(delta) {
     mesAtual += delta;
 
@@ -181,14 +181,13 @@ function mudarMes(delta) {
     } else if (mesAtual > 12) {
         mesAtual = 1;
         anoAtual++;
-}
-
+    }
     document.getElementById('mesAtual').innerText = `${mesAtual}/${anoAtual}`;
     criarCalendario();
     atualizarConteudo();
 }
 
-// Inicializar o conteúdo da página
+// carregar o conteúdo da página
 document.getElementById('mesAtual').innerText = `${mesAtual}/${anoAtual}`;
 criarCalendario();
 atualizarConteudo();
