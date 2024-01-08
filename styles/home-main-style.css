@@ -40,6 +40,18 @@ main ul li {
   height: 250px;
 }
 
+@media screen and (max-width: 768px) {
+  .telahome {
+    margin: auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    height: 200px;
+  }
+}
+
 section {
   display: flex;
   justify-content: space-between;
