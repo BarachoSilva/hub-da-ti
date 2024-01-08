@@ -54,4 +54,3 @@ const arrayHistoria = [
   section.appendChild(div)
   
   }
-  
