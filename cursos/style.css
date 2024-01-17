@@ -19,9 +19,8 @@ main {
   background-color: #6b6e91;
 }
 
-
-nav a:hover {
-  color: blue;
+a:hover {
+  opacity: 0.6;
 }
 
 h1 {
@@ -128,21 +127,11 @@ section {
 }
 
 @media only screen and (max-width: 1024px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100%;
-  }
 
-  .menu-btn {
-    order: 0; 
+  .cadastro-section {
+    margin: 50px;
+    padding: 0px;
+    margin-top: -50px;
+    margin-bottom: 0px;
   }
-
-  .nav {
-    display: flex;
-    position: static;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
+}

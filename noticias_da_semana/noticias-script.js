@@ -1,3 +1,4 @@
+// declarar a arrayPostagens
 const arrayPostagens = {
     "1": [
       {
@@ -9,12 +10,28 @@ const arrayPostagens = {
         diaPostagem: "1"
       },
       {
-        tituloMateria: "Conheça as habilidades essenciais para os analistas",
+        tituloMateria: "Conheça as habilidades essenciais para os analistas de ameaça",
         textoMateria: "Conhecimento em diferentes linguagens e ferramentas de programação, aprendizado de máquina e inteligência artificial são algumas das habilidades técnicas  ...",
         imagem: "https://www.csoonline.com/wp-content/uploads/2024/01/insider-threat-shadow-worker-laptop.jpg?resize=1024%2C684&quality=50&strip=all",
         textoOrigem: "CSO  - 02/01/2024",
         link: "https://www.csoonline.com/article/1270134/bolster-your-teams-cyber-defense-essential-skills-for-todays-threat-analysts.html",
         diaPostagem: "2"
+      },
+      {
+        tituloMateria: "Código aberto falhou completamente em atender pessoas comuns - diz cofundador do movimento Open Source",
+        textoMateria: "Para os familiarizados com o movimento Open Source, Bruce Perens dispensa apresentações. Um dos fundadores da iniciativa junto a Eric Raymond   ...",
+        imagem: "https://cdn.tecmasters.com.br/wp-content/uploads/2024/01/shutterstock_2171440301The7Dew.jpg",
+        textoOrigem: "TECMASTERS  - 03/01/2024",
+        link: "https://www.tecmasters.com.br/codigo-aberto-falhou-pessoas-comuns-open-source/",
+        diaPostagem: "3"
+      },
+      {
+        tituloMateria: "Quão rápida é a sua linguagem de programação? Novo concurso e benchmarks geram debate",
+        textoMateria: "Os programadores Java estão sendo pressionados a publicar a solução mais rápida possível para um “desafio de um bilhão de linhas”, gerando soluções  ...",
+        imagem: "https://devclass.com/wp-content/uploads/2024/01/speed_shutterstock-768x512.jpg",
+        textoOrigem: "DEVCLASS  - 04/01/2024",
+        link: "https://www.devclass.com/2024/01/04/how-fast-is-your-programming-language-new-contest-and-benchmarks-spark-debate/",
+        diaPostagem: "4"
       },
     ],
     "12": [
@@ -75,10 +92,10 @@ const arrayPostagens = {
         diaPostagem: "1"
       },
     ],
-    // adicionar outros meses conforme necessário
+    // espaço para adicionar outros meses
 };
 
-let mesAtual = new Date().getMonth() + 1; // Mês atual
+let mesAtual = new Date().getMonth() + 1;
 let anoAtual = new Date().getFullYear();
 
 function criarCalendario() {
@@ -86,12 +103,10 @@ function criarCalendario() {
     let hoje = new Date();
     let diasDoMes = new Date(anoAtual, mesAtual, 0).getDate();
     let primeiroDiaDoMes = new Date(anoAtual, mesAtual - 1, 1).getDay();
-
     let contadorDia = 1;
 
-    // Definir o corpo da tabela
+    // definir o corpo da tabela
     corpoTabela.innerHTML = '';
-
     for (let i = 0; i < 6; i++) {
         let linhas = corpoTabela.insertRow(i);
 
@@ -112,7 +127,6 @@ function criarCalendario() {
             }
             celula.innerHTML = contadorDia;
             if (anoAtual === hoje.getFullYear() && mesAtual === hoje.getMonth() + 1 && contadorDia === hoje.getDate()) {
-                // Destacar o dia atual
                 celula.classList.add('current-day');
             }
             contadorDia++;
@@ -121,7 +135,7 @@ function criarCalendario() {
     adicionarEventoDestaque();
 }
 
-// Definir evento de acesso à postagem
+// definir evento de destaque
 function adicionarEventoDestaque() {
     let cells = document.getElementsByTagName('td');
     for (let i = 0; i < cells.length; i++) {
@@ -129,23 +143,27 @@ function adicionarEventoDestaque() {
             let date = this.textContent;
             let targetPost = arrayPostagens[mesAtual.toString()].find(post => post.diaPostagem === date);
             if (targetPost) {
-                window.location.href = targetPost.link;
+              window.open(
+                targetPost.link,
+                '_blank'
+              );
             }
         });
     }
 }
 
-// Atualizar o conteúdo da página com base no mês atual
+// atualizar o conteúdo da página com o mês atual
 function atualizarConteudo() {
     const section = document.querySelector('section');
-    section.innerHTML = ''; // Limpar o conteúdo existente
+    section.innerHTML = '';
 
     for (let i = 0; i < arrayPostagens[mesAtual.toString()].length; i++) {
         const div = document.createElement("div");
         div.id = `post-${[i + 1]}`;
 
         div.innerHTML = `<h3>${arrayPostagens[mesAtual.toString()][i].tituloMateria}
-            <p>${arrayPostagens[mesAtual.toString()][i].textoMateria}</p><a class="saibaMais" href=${arrayPostagens[mesAtual.toString()][i].link} target="_blank">Saiba mais</a></h3>
+            <p>${arrayPostagens[mesAtual.toString()][i].textoMateria}</p><a class="saibaMais"
+            href=${arrayPostagens[mesAtual.toString()][i].link} target="_blank">Saiba mais</a></h3>
             <p><img height="200px" width="250px" src="${arrayPostagens[mesAtual.toString()][i].imagem}">
             ${arrayPostagens[mesAtual.toString()][i].textoOrigem}</p>`;
 
@@ -153,7 +171,7 @@ function atualizarConteudo() {
     }
 }
 
-// Mudar o mês e atualizar o conteúdo
+// mudar o mês e atualizar o conteúdo
 function mudarMes(delta) {
     mesAtual += delta;
 
@@ -163,14 +181,13 @@ function mudarMes(delta) {
     } else if (mesAtual > 12) {
         mesAtual = 1;
         anoAtual++;
-}
-
+    }
     document.getElementById('mesAtual').innerText = `${mesAtual}/${anoAtual}`;
     criarCalendario();
     atualizarConteudo();
 }
 
-// Inicializar o conteúdo da página
+// carregar o conteúdo da página
 document.getElementById('mesAtual').innerText = `${mesAtual}/${anoAtual}`;
 criarCalendario();
 atualizarConteudo();
