@@ -22,11 +22,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-img {
-    max-width: auto;
-    height: auto;
-}
-
 h3 {
   margin: 60px 60px 24px 60px;
 }
@@ -61,6 +56,11 @@ div a {
   padding: 20px;
 }
 
+img {
+  max-width: auto;
+  height: auto;
+}
+
 .divfim{
   height: 60px;
   background-color: #4d4f6d;
@@ -75,6 +75,7 @@ div a {
 }
 
 @media screen and (max-width: 1024px) {
+  
   h1 {
     font-size: 20px;
   }
@@ -102,12 +103,19 @@ div a {
     width: 20px;
     height: 20px;
   }
-}
 
-@media screen and (max-width: 740px) {
   img {
     max-width: 80%; 
     height: auto;
   }
+}
+
+@media screen and (max-width: 740px) {
+
+  img {
+    max-width: 100%; 
+    height: auto;
+  }
+
 }
 
