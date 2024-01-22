@@ -37,7 +37,7 @@ const arrayPostagens = [
   },
   {
     textoMateria: "Como sair do zero em Java em apenas 1 hora",
-    tituloMateria: "Para quem programa e quer dar os primeiros passos na linguagem de Java, esse vídeo vai explicar os conceitos fundamentais da linguagem...",
+    tituloMateria: "Para quem programa e quer dar os primeiros passos na linguagem de Java, esse vídeo vai explicar os conceitos fundamentais da linguagem ...",
     imagem: "./img/rocketseat.png",
     textoOrigem: "Canal Rocketseat",
     link: "https://www.youtube.com/watch?v=EpXYPB1rv4w&t=16s"

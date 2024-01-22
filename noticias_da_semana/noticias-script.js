@@ -2,36 +2,84 @@
 const arrayPostagens = {
     "1": [
       {
+        tituloMateria: "Digital Ocean quer abrir as comportas para o uso de IA por pequenas empresas com acesso ao Nvidia H100",
+        textoMateria: "A Digital Ocean construiu seu negócio em nuvem com foco em desenvolvedores que atendem pequenas e médias empresas e agora está expandindo esse negócio com novo suporte para o acelerador Nvidia H100 GPU AI líder do setor. A Nvidia H100 estará disponível na plataforma Paperspace, que foi adquirida ...",
+        imagem: "https://tpc.googlesyndication.com/simgad/3250486349991005855?",
+        textoOrigem: "Venture Beat - 18/01/2024",
+        link: "https://venturebeat.com/ai/digitalocean-wants-to-open-the-floodgates-to-ai-for-smaller-enterprises-with-nvidia-h100-access/",
+        diaPostagem: "18"
+      },
+      {
+        tituloMateria: "Empresas de tecnologia iniciam 2024 com demissões totalizando 7,5 mil funcionários",
+        textoMateria: "14 dias após o início do Ano Novo, 46 empresas de tecnologia já demitiram cerca de 7.500 funcionários, de acordo com o rastreador de demissões do website Layoffs.fyi ...",
+        imagem: "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkppkmjlgbm9u8lfstm8o.jpg",
+        textoOrigem: "DEV - 17/01/2024",
+        link: "https://dev.to/klimd1389/tech-companies-start-2024-with-layoffs-totaling-7500-employees-1nh3",
+        diaPostagem: "17"
+      },
+      {
+        tituloMateria: "Quer saber a dura verdade sobre IA? Ela poderá produzir softwares bem melhor do que nós fazemos",
+        textoMateria: "Como você sem dúvida notou, estamos no meio de um frenesi em torno de algo chamado IA generativa. Legiões de pessoas estão a surfar numa onda de exuberância irracional sobre o seu potencial transformador ...",
+        imagem: "https://i.guim.co.uk/img/media/55df34d39748c4db81e50e84783dada6a442f356/0_140_4200_2520/master/4200.jpg?width=620&dpr=1&s=none",
+        textoOrigem: "The Guardian - 13/01/2024",
+        link: "https://www.theguardian.com/commentisfree/2024/jan/13/truth-about-ai-might-produce-better-software",
+        diaPostagem: "13"
+      },
+      {
+        tituloMateria: "Novo estudo identifica os pontos fracos da IA",
+        textoMateria: "ChatGPT e outras soluções baseadas em Machine Learning estão surgindo. Mas mesmo os algoritmos mais bem-sucedidos têm limitações. Como os primeiros pesquisadores do mundo da Universidade de Copenhague provaram matematicamente que  ...",
+        imagem: "https://www.sciencedaily.com/images/sd-logo.png",
+        textoOrigem: "Science News - 11/01/2024",
+        link: "https://www.devclass.com/2024/01/04/how-fast-is-your-programming-language-new-contest-and-benchmarks-spark-debate/",
+        diaPostagem: "11"
+      },
+      {
+        tituloMateria: "OpenAI quer que todos construam sua própria versão do ChatGPT",
+        textoMateria: "Na primeira conferência de desenvolvedores da OpenAI, a empresa por trás do ChatGPT anunciou novas ferramentas que permitem a qualquer pessoa criar um  ...",
+        imagem: "https://media.wired.com/photos/65491003152211f9f631d3fb/master/w_1600,c_limit/OpenAI-Updates-Chatbots-Business-GettyImages-1403128248.jpg",
+        textoOrigem: "Wired - 06/01/2024",
+        link: "https://www.wired.com/story/openai-wants-everyone-to-build-their-own-version-of-chatgpt/",
+        diaPostagem: "6"
+      },
+      {
+        tituloMateria: "O pioneiro da linguagem de programação Niklaus Wirth morre aos 89 anos",
+        textoMateria: "Wirth recebeu o Prêmio Turing em 1984 por suas contribuições à ciência da computação, com sua linguagem de codificação Pascal sendo descrita como base para sistemas futuros. Criador de múltiplas linguagens de codificação e pioneiro em design de software ...",
+        imagem: "https://www.siliconrepublic.com/wp-content/uploads/2024/01/49393586688_0c0809e6bb_o-718x523.jpg",
+        textoOrigem: "SiliconRepublic - 05/01/2024",
+        link: "https://www.siliconrepublic.com/innovation/niklaus-wirth-dies-aged-89-pascal-coding-computer-science",
+        diaPostagem: "5"
+      },
+      {
+        tituloMateria: "Quão rápida é a sua linguagem de programação? Novo concurso e benchmarks geram debate",
+        textoMateria: "Os programadores Java estão sendo pressionados a publicar a solução mais rápida possível para um “desafio de um bilhão de linhas”, gerando soluções  ...",
+        imagem: "https://devclass.com/wp-content/uploads/2024/01/speed_shutterstock-768x512.jpg",
+        textoOrigem: "DEVCLASS - 04/01/2024",
+        link: "https://www.devclass.com/2024/01/04/how-fast-is-your-programming-language-new-contest-and-benchmarks-spark-debate/",
+        diaPostagem: "4"
+      },
+      {
+        tituloMateria: "Código aberto falhou completamente em atender pessoas comuns - diz cofundador do movimento Open Source",
+        textoMateria: "Para os familiarizados com o movimento Open Source, Bruce Perens dispensa apresentações. Um dos fundadores da iniciativa junto a Eric Raymond   ...",
+        imagem: "https://cdn.tecmasters.com.br/wp-content/uploads/2024/01/shutterstock_2171440301The7Dew.jpg",
+        textoOrigem: "TECMASTERS - 03/01/2024",
+        link: "https://www.tecmasters.com.br/codigo-aberto-falhou-pessoas-comuns-open-source/",
+        diaPostagem: "3"
+      },
+      {
+        tituloMateria: "Conheça as habilidades essenciais para os analistas de ameaça",
+        textoMateria: "Conhecimento em diferentes linguagens e ferramentas de programação, aprendizado de máquina e inteligência artificial são algumas das habilidades técnicas  ...",
+        imagem: "https://www.csoonline.com/wp-content/uploads/2024/01/insider-threat-shadow-worker-laptop.jpg?resize=1024%2C684&quality=50&strip=all",
+        textoOrigem: "CSO - 02/01/2024",
+        link: "https://www.csoonline.com/article/1270134/bolster-your-teams-cyber-defense-essential-skills-for-todays-threat-analysts.html",
+        diaPostagem: "2"
+      },
+      {
         tituloMateria: "Conheça quais serão as linguagens de programação com maior produção em 2024",
         textoMateria: "Se com o novo ano você decidiu aumentar sua empregabilidade aprendendo uma nova linguagem de programação ou fazendo uma mudança profissional direta ...",
         imagem: "https://i.blogs.es/2e97c9/james-harrison-vpoexr5wmr4-unsplash/840_560.jpeg",
         textoOrigem: "Gearrice - 01/01/2024",
         link: "https://www.gearrice.com/update/these-will-be-the-programming-languages-with-the-most-output-in-2024-you-can-start-learning-them-for-free/",
         diaPostagem: "1"
-      },
-      {
-        tituloMateria: "Conheça as habilidades essenciais para os analistas de ameaça",
-        textoMateria: "Conhecimento em diferentes linguagens e ferramentas de programação, aprendizado de máquina e inteligência artificial são algumas das habilidades técnicas  ...",
-        imagem: "https://www.csoonline.com/wp-content/uploads/2024/01/insider-threat-shadow-worker-laptop.jpg?resize=1024%2C684&quality=50&strip=all",
-        textoOrigem: "CSO  - 02/01/2024",
-        link: "https://www.csoonline.com/article/1270134/bolster-your-teams-cyber-defense-essential-skills-for-todays-threat-analysts.html",
-        diaPostagem: "2"
-      },
-      {
-        tituloMateria: "Código aberto falhou completamente em atender pessoas comuns - diz cofundador do movimento Open Source",
-        textoMateria: "Para os familiarizados com o movimento Open Source, Bruce Perens dispensa apresentações. Um dos fundadores da iniciativa junto a Eric Raymond   ...",
-        imagem: "https://cdn.tecmasters.com.br/wp-content/uploads/2024/01/shutterstock_2171440301The7Dew.jpg",
-        textoOrigem: "TECMASTERS  - 03/01/2024",
-        link: "https://www.tecmasters.com.br/codigo-aberto-falhou-pessoas-comuns-open-source/",
-        diaPostagem: "3"
-      },
-      {
-        tituloMateria: "Quão rápida é a sua linguagem de programação? Novo concurso e benchmarks geram debate",
-        textoMateria: "Os programadores Java estão sendo pressionados a publicar a solução mais rápida possível para um “desafio de um bilhão de linhas”, gerando soluções  ...",
-        imagem: "https://devclass.com/wp-content/uploads/2024/01/speed_shutterstock-768x512.jpg",
-        textoOrigem: "DEVCLASS  - 04/01/2024",
-        link: "https://www.devclass.com/2024/01/04/how-fast-is-your-programming-language-new-contest-and-benchmarks-spark-debate/",
-        diaPostagem: "4"
       },
     ],
     "12": [
