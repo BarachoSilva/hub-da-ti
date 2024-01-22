@@ -30,7 +30,7 @@ const arrayPostagens = {
         textoMateria: "ChatGPT e outras soluções baseadas em Machine Learning estão surgindo. Mas mesmo os algoritmos mais bem-sucedidos têm limitações. Como os primeiros pesquisadores do mundo da Universidade de Copenhague provaram matematicamente que  ...",
         imagem: "https://www.sciencedaily.com/images/sd-logo.png",
         textoOrigem: "Science News - 11/01/2024",
-        link: "https://www.devclass.com/2024/01/04/how-fast-is-your-programming-language-new-contest-and-benchmarks-spark-debate/",
+        link: "https://www.sciencedaily.com/releases/2024/01/240111113057.htm",
         diaPostagem: "11"
       },
       {
