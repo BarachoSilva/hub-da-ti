@@ -2,6 +2,38 @@
 const arrayPostagens = {
     "1": [
       {
+        tituloMateria: "Finalmente chega a TypeScript 5.4 beta",
+        textoMateria: "A atualização mais recente do JavaScript fortemente tipado preserva os refinamentos de tipo nos fechamentos após a última atribuição e introduz um tipo de utilitário NoInfer ...",
+        imagem: "https://images.idgesg.net/images/article/2023/03/shutterstock_701379820-100938933-large.jpg?auto=webp&quality=85,70",
+        textoOrigem: "Info World - 30/01/2024",
+        link: "https://www.infoworld.com/article/3712660/typescript-54-beta-arrives.html",
+        diaPostagem: "30"
+      },
+      {
+        tituloMateria: "Por que os executivos de TI precisam considerar o GraphQL",
+        textoMateria: "GraphQL oferece aos desenvolvedores uma maneira flexível e unificada de conectar dados e serviços. Seu planejamento de consulta e mecanismo de política o tornam uma opção promissora para adicionar LLMs ao mix ...",
+        imagem: "https://images.idgesg.net/images/idge/imported/imageapi/2022/06/24/10/digital_transformation_finger_tap_causes_waves_of_interconnected_digital_ripples_by_gerd_altmann_cc0_via_pixabay_1200x800-100765086-large-100929467-large.jpg?auto=webp&quality=85,70",
+        textoOrigem: "Info World - 29/01/2024",
+        link: "https://www.infoworld.com/article/3712544/why-it-execs-need-to-consider-graphql.html",
+        diaPostagem: "29"
+      },
+      {
+        tituloMateria: "Google adiciona simuladores iOS e Android ao Project IDX",
+        textoMateria: "O Google adicionou simuladores iOS e Android diretamente em seu espaço de trabalho de desenvolvedor baseado em nuvem, Project IDX. A gigante das buscas lançou o Projeto IDX há seis meses como uma ferramenta experimental para agilizar o desenvolvimento de aplicativos multiplataforma full-stack ...",
+        imagem: "https://www.developer-tech.com/wp-content/uploads/sites/3/2024/01/google-project-idx-android-ios-emulator-cloud-workspace-software-development-coding-programming-2048x1316.jpg",
+        textoOrigem: "Developer - 26/01/2024",
+        link: "https://www.developer-tech.com/news/2024/jan/26/google-adds-ios-and-android-simulators-project-idx/",
+        diaPostagem: "26"
+      },
+      {
+        tituloMateria: "Aprenda fazendo: como os LLMs devem remodelar a educação",
+        textoMateria: "O caminho para a aprendizagem autônoma prática é por meio de grandes modelos de linguagem (LLMs). Jon Udell mostra como o setor EdTech pode usar IA ...",
+        imagem: "https://cdn.thenewstack.io/media/2024/01/4019b8b3-kenny-eliason-zfso6bnzjtw-unsplash-1024x637.jpg",
+        textoOrigem: "The News Stack - 22/01/2024",
+        link: "https://thenewstack.io/learn-by-doing-how-llms-should-reshape-education/",
+        diaPostagem: "22"
+      },
+      {
         tituloMateria: "Digital Ocean quer abrir as comportas para o uso de IA por pequenas empresas com acesso ao Nvidia H100",
         textoMateria: "A Digital Ocean construiu seu negócio em nuvem com foco em desenvolvedores que atendem pequenas e médias empresas e agora está expandindo esse negócio com novo suporte para o acelerador Nvidia H100 GPU AI líder do setor. A Nvidia H100 estará disponível na plataforma Paperspace, que foi adquirida ...",
         imagem: "https://tpc.googlesyndication.com/simgad/3250486349991005855?",
