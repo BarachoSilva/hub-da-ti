@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const formularioCadastro = document.querySelector(".cadastro-form");
 
-  formularioCadastro.addEventListener("submit", function (event) {
+  formularioCadastro.addEventListener("change", function (event) {
     event.preventDefault();
 
     const nomeInput = document.getElementById("nome");
