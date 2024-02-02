@@ -79,7 +79,7 @@ section {
   margin: auto auto auto auto;
   display: flow-root;
   justify-content: center;
-  weight: auto;
+  width: auto;
 }
 
 div {

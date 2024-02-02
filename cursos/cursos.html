@@ -107,6 +107,7 @@ Curso completo para quem quer aprender a criar sites utilizando as tecnologias d
         <div class="cadastro-section">
             <form class="cadastro-form">
                 <h3>Faça seu cadastro e concorra a gratuidade de um curso de sua preferência!</h3>
+
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -116,9 +117,9 @@ Curso completo para quem quer aprender a criar sites utilizando as tecnologias d
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" required>
 
-                <label class="cursosTech" for="tech">Qual o curso de sua Preferência?</label>
+                <label class="selecao" for="selecao">Qual o curso de sua Preferência?</label>
                 <div class="selecao">
-                    <select name="" class="tech">
+                    <select name="" class="selecao" required>
                     <option value=""></option>
                     <option value="1">Algoritmos</option>
                     <option value="2">Git e Github</option>
@@ -126,6 +127,16 @@ Curso completo para quem quer aprender a criar sites utilizando as tecnologias d
                     <option value="4">JavaScript</option>
                     </select>
                 </div>
+
+                <label for="news">Deseja receber semanalmente a nossa newsletter?</label>
+                <div class="news">
+                  <select name="" class="news" required>
+                  <option value=""></option>
+                  <option value="1">Sim</option>
+                  <option value="2">Não</option>
+                  </select>
+                </div>
+              
                 <button type="submit">Cadastrar</button>
             </form>
         </div>

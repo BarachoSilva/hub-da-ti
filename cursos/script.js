@@ -49,10 +49,15 @@ document.addEventListener("DOMContentLoaded", function () {
   formularioCadastro.addEventListener("change", function (event) {
     event.preventDefault();
 
+    function validateEmail(email) {
+      const re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+
     const nomeInput = document.getElementById("nome");
     const nomeValue = nomeInput.value.trim();
-    if (nomeValue === "" || /\d/.test(nomeValue)) {
-      alert("Por favor, preencha o campo de nome corretamente.");
+    if (nomeValue.length < 3) {
+      alert("Por favor, preencha o campo Nome: com ao menos 3 caracteres.");
       nomeInput.classList.add("campo-invalido");
       nomeInput.classList.remove("campo-valido");
       return;
@@ -64,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById("email");
     const emailValue = emailInput.value.trim();
     if (emailValue === "" || !validateEmail(emailValue)) {
-      alert("Por favor, insira um e-mail válido.");
+      alert("Por favor, insira um formato de e-mail válido (exemplo@exemplo.exemplo).");
       emailInput.classList.add("campo-invalido");
       emailInput.classList.remove("campo-valido");
       return;
@@ -75,8 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const telefoneInput = document.getElementById("telefone");
     const telefoneValue = telefoneInput.value.trim();
-    if (!/^\d{9}$/.test(telefoneValue)) {
-      alert("Por favor, insira um número de telefone válido (9 dígitos).");
+    if (!/^\d{11}$/.test(telefoneValue)) {
+      alert("Por favor, insira um número de telefone válido (11 dígitos -> DDD + num).");
       telefoneInput.classList.add("campo-invalido");
       telefoneInput.classList.remove("campo-valido");
       return;
@@ -85,14 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
       telefoneInput.classList.add("campo-valido");
     }
 
-    alert("Cadastro realizado com sucesso!");
-    formularioCadastro.submit();
   });
-
-  function validateEmail(email) {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
-  }
 
   formularioCadastro.querySelectorAll("input").forEach(function (input) {
     input.addEventListener("input", function () {
