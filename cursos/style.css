@@ -108,11 +108,10 @@ section {
   color: black;
 }
 
-.cadastro-form select.tech {
+.cadastro-form div select.tech {
   background-color: #e6ffe6;
   width: 100%;
   padding: 8px;
-  margin-bottom: 16px;
   border: 1px solid #6b6e91;
   color: black;
 }
@@ -124,6 +123,14 @@ section {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.cadastro-form div.selecao {
+  background-color: #e6ffe6;
+  width: 100%;
+  margin-bottom: 16px;
+  border: 1px solid #6b6e91;
+  color: black;
 }
 
 .cadastro-form button:hover {
