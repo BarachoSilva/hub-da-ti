@@ -1,6 +1,24 @@
 // declarar a arrayPostagens
 const arrayPostagens = {
+  "2": [
+    {
+      tituloMateria: "Distrito lança GenAI Lab e apresenta as primeiras startups selecionadas para a iniciativa",
+      textoMateria: "O Distrito realizou nesta quarta-feira, 31, o evento de lançamento do GenAI Lab, programa exclusivo para fomento de negócios baseados em inteligência artificial generativa. Na ocasião, foram apresentadas as 17 startups selecionadas ...",
+      imagem: "https://tiinside.com.br/wp-content/uploads/2023/08/IA-Generativa-Precisamos-falar-sobre-seguranca-1024x621.jpg",
+      textoOrigem: "Tiinside - 01/02/2024",
+      link: "https://tiinside.com.br/01/02/2024/distrito-lanca-genai-lab-e-apresenta-as-primeiras-startups-selecionadas-para-a-iniciativa/",
+      diaPostagem: "1"
+    },
+  ],
     "1": [
+      {
+        tituloMateria: "Especialistas expressam preocupações sobre os geradores de imagens de IA que podem violar as leis de direitos autorais",
+        textoMateria: "O uso de geradores de imagens de IA levantou preocupações sobre possíveis violações de direitos autorais, informou o New York Times. Diferentes usuários testaram o gerador de imagens AI, Midjourney, para produzir uma imagem que acabou sendo idêntica a ...",
+        imagem: "https://diplo-media.s3.eu-central-1.amazonaws.com/2024/01/MIDJOURNEY-1024x573.jpg",
+        textoOrigem: "Dig watch - 31/01/2024",
+        link: "https://dig.watch/updates/experts-express-concerns-over-ai-image-generators-potentially-violating-copyright-laws",
+        diaPostagem: "31"
+      },
       {
         tituloMateria: "Finalmente chega a TypeScript 5.4 beta",
         textoMateria: "A atualização mais recente do JavaScript fortemente tipado preserva os refinamentos de tipo nos fechamentos após a última atribuição e introduz um tipo de utilitário NoInfer ...",
