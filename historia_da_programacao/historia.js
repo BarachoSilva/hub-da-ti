@@ -48,7 +48,7 @@ const arrayHistoria = [
     
   div.innerHTML =
   `<h3><p>${arrayHistoria[i].titulo}</p>${arrayHistoria[i].texto}</h3>
-  <a href="${arrayHistoria[i].link}"target="_blank"><img height="250px" width="600px" src="${arrayHistoria[i].imagem}"><p>${arrayHistoria[i].legenda}</p>`
+  <a href="${arrayHistoria[i].link}"target="_blank"><img height="150px" width="400px" src="${arrayHistoria[i].imagem}"><p>${arrayHistoria[i].legenda}</p>`
 
   const section = document.querySelector('section')
   section.appendChild(div)
