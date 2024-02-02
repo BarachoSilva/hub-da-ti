@@ -37,6 +37,11 @@ h2 {
   margin-bottom: 40px;
 }
 
+h3 {
+  font-size: medium;
+  margin-bottom: 40px;
+}
+
 section {
   width: 95vw;
   height: auto;
@@ -70,7 +75,7 @@ section {
   height: 25px;
 }
 .cadastro-section {
-  margin: 500px;
+  margin: 300px;
   padding: 0px;
   margin-top: -50px;
   margin-bottom: 0px;
@@ -95,6 +100,15 @@ section {
 }
 
 .cadastro-form input {
+  background-color: #e6ffe6;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #6b6e91;
+  color: black;
+}
+
+.cadastro-form select.tech {
   background-color: #e6ffe6;
   width: 100%;
   padding: 8px;
