@@ -53,7 +53,7 @@ h3 {
 }
 .form {
   width: 90vw;
-  height: 70vh;
+  height: 60vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -71,6 +71,10 @@ input {
   margin-top: 6px;
   border-radius: 10px;
   cursor: pointer;
+}
+p{
+  font-size: 1.2em;
+  padding: 2px;
 }
 .helper-text {
   display: none;
@@ -135,23 +139,26 @@ textarea {
     font-size: 22px;
   }
   .section {
-    height: 55vh;
+    height: 65vh;
     flex-direction: column;
     justify-content: space-evenly;
+   
   }
   .profile {
     width: 50vw;
     height: 25vh;
     margin: 4px;
+    
   }
   .div {
     width: 85%;
     height: 40vh;
+   
     
   }
 
   .form {
-    height: 55vh;
+    height: 70vh;
   }
 
   .final {
