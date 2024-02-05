@@ -2,6 +2,14 @@
 const arrayPostagens = {
   "2": [
     {
+      tituloMateria: "Programação assíncrona em JavaScript",
+      textoMateria: "Embora o JavaScript seja síncrono, você pode realizar programação assíncrona com ele. Neste artigo, você aprenderá sobre programação assíncrona em JavaScript e como usá-la ...",
+      imagem: "https://www.freecodecamp.org/news/content/images/size/w2000/2024/02/Await-2.png",
+      textoOrigem: "FreeCodeCamp - 02/02/2024",
+      link: "https://www.freecodecamp.org/news/asynchronous-programming-in-javascript-examples/",
+      diaPostagem: "2"
+    },
+    {
       tituloMateria: "Distrito lança GenAI Lab e apresenta as primeiras startups selecionadas para a iniciativa",
       textoMateria: "O Distrito realizou nesta quarta-feira, 31, o evento de lançamento do GenAI Lab, programa exclusivo para fomento de negócios baseados em inteligência artificial generativa. Na ocasião, foram apresentadas as 17 startups selecionadas ...",
       imagem: "https://tiinside.com.br/wp-content/uploads/2023/08/IA-Generativa-Precisamos-falar-sobre-seguranca-1024x621.jpg",

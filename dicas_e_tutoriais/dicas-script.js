@@ -77,6 +77,13 @@ const arrayPostagens = [
     textoOrigem: "The News Stack",
     link: "https://thenewstack.io/how-to-define-and-use-your-own-functions-in-python/"
   },
+  {
+    textoMateria: "Como usar IA para detecção de perguntas duplicadas no Stack Overflow",
+    tituloMateria: "Aqui está mais um caso de uso de redes neurais - desta vez para identificar questões duplicadas no Stack Overflow para eliminá-las, melhorando assim a qualidade do recurso ...",
+    imagem: "https://www.i-programmer.info/images/stories/News/2022/Oct/A/dupqs1.JPG",
+    textoOrigem: "I-programmer.info",
+    link: "https://www.i-programmer.info/news/105-artificial-intelligence/15796-using-ai-for-duplicate-question-detection-on-stack-overflow.html"
+  },
 ]
 
 for (let i = 0; i < arrayPostagens.length; i++) {
